@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tables</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Border Collapse
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling whether table borders should collapse or be separated.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/border-collapse">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Collapse
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "border-collapse" to combine adjacent cell borders into a single border when possible.
+    Note that this includes collapsing borders on the top-level "&lt;table>" tag.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/border-collapse#collapse">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 py-8 sm:px-8">
+        <table class="border-collapse w-full border border-slate-400 dark:border-slate-500
+            bg-white dark:bg-slate-800 text-sm shadow-sm">
+          <thead class="bg-slate-50 dark:bg-slate-700">
+          <tr>
+            <th class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4
+            text-slate-900 dark:text-slate-200 text-left">
+              State
+            </th>
+            <th class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4
+            text-slate-900 dark:text-slate-200 text-left">
+              City
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Indiana
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Indianapolis
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Ohio
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Columbus
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Michigan
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Detroit
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Separate
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "border-separate" to force each cell to display its own separate borders.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/border-collapse#separate">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 py-8 sm:px-8">
+        <table class="border-separate w-full border border-slate-400 dark:border-slate-500
+        bg-white dark:bg-slate-800 text-sm shadow-sm">
+          <thead class="bg-slate-50 dark:bg-slate-700">
+          <tr>
+            <th class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4
+            text-slate-900 dark:text-slate-200 text-left">
+              State
+            </th>
+            <th class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4
+             text-slate-900 dark:text-slate-200 text-left">
+              City
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500
+            dark:text-slate-400">
+              Indiana
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500
+            dark:text-slate-400">
+              Indianapolis
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500
+            dark:text-slate-400">
+              Ohio
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500
+            dark:text-slate-400">
+              Columbus
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500
+            dark:text-slate-400">
+              Michigan
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500
+             dark:text-slate-400"
+            >Detroit
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Border Spacing
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the spacing between table borders.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/border-spacing">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the border spacing
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "border-spacing" to control the space between the borders of table cells with separate borders.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/border-spacing#setting-the-border-spacing">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 py-8 sm:px-8">
+        <table class="border-separate border-spacing-2 w-full border border-slate-400
+            dark:border-slate-500 bg-white dark:bg-slate-800 text-sm shadow-sm">
+          <thead class="bg-slate-50 dark:bg-slate-700">
+          <tr>
+            <th class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900
+            dark:text-slate-200 text-left">
+              State
+            </th>
+            <th class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900
+            dark:text-slate-200 text-left">
+              City
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Indiana
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Indianapolis
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Ohio
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Columbus
+            </td>
+          </tr>
+          <tr>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Michigan
+            </td>
+            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Detroit
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Table Layout
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the table layout algorithm.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/table-layout">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Auto
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "table-auto" to allow the table to automatically size columns to fit the contents of the cell.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/table-layout#auto">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="shadow-sm overflow-hidden my-8">
+        <table class="border-collapse table-auto w-full text-sm">
+          <thead>
+          <tr>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400
+              dark:text-slate-200 text-left">
+              Song
+            </th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400
+            dark:text-slate-200 text-left">
+              Artist
+            </th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400
+            dark:text-slate-200 text-left">
+              Year
+            </th>
+          </tr>
+          </thead>
+          <tbody class="bg-white dark:bg-slate-800">
+          <tr>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              The Sliding Mr. Bones (Next Stop, Pottersville)
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Malcolm Lockyer
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+              1961
+            </td>
+          </tr>
+          <tr>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              Witchy Woman
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              The Eagles
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+              1972
+            </td>
+          </tr>
+          <tr>
+            <td class="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              Shining Star
+            </td>
+            <td class="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-500 dark:text-slate-400">
+              Earth, Wind, and Fire
+            </td>
+            <td class="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-500 dark:text-slate-400">
+              1975
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Fixed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "table-fixed" to allow the table to ignore the content and use fixed widths for columns.
+    The width of the first row will set the column widths for the whole table.
+    <br>
+    You can manually set the widths for some columns and the rest of the available width will
+    be divided evenly amongst the columns without explicit width.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/table-layout#fixed">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="shadow-sm overflow-hidden my-8">
+        <table class="border-collapse table-fixed w-full text-sm">
+          <thead>
+          <tr>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400
+          dark:text-slate-200 text-left">
+              Song
+            </th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400
+            dark:text-slate-200 text-left">
+              Artist
+            </th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400
+            dark:text-slate-200 text-left">
+              Year
+            </th>
+          </tr>
+          </thead>
+          <tbody class="bg-white dark:bg-slate-800">
+          <tr>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              The Sliding Mr. Bones (Next Stop, Pottersville)
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              Malcolm Lockyer
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+              1961
+            </td>
+          </tr>
+          <tr>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              Witchy Woman
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+              The Eagles
+            </td>
+            <td class="border-b border-slate-100 dark:border-slate-700 p-4 pr-8 text-slate-500 dark:text-slate-400">
+              1972
+            </td>
+          </tr>
+          <tr>
+            <td class="border-b border-slate-200 dark:border-slate-600 p-4 pl-8 text-slate-500 dark:text-slate-400">
+              Shining Star
+            </td>
+            <td class="border-b border-slate-200 dark:border-slate-600 p-4 text-slate-500 dark:text-slate-400">
+              Earth, Wind, and Fire
+            </td>
+            <td class="border-b border-slate-200 dark:border-slate-600 p-4 pr-8 text-slate-500 dark:text-slate-400">
+              1975
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

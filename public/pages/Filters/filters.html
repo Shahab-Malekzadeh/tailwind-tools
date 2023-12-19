@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filters</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Blur
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying blur filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/blur">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Blurring elements
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "blur-{amount?}" utilities to blur an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/blur#blurring-elements">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-none</p>
+            <div class="relative blur-none">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-sm</p>
+            <div class="relative blur-sm">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur</p>
+            <div class="relative blur">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-md</p>
+            <div class="relative blur-md">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-lg</p>
+            <div class="relative blur-lg">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-xl</p>
+            <div class="relative blur-xl">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-2xl</p>
+            <div class="relative blur-2xl">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">blur-3xl</p>
+            <div class="relative blur-3xl">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Brightness
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying brightness filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/brightness">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing element brightness
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the brightness-{amount?} utilities to control an element’s brightness.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/brightness#changing-element-brightness">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-0</p>
+            <div class="relative brightness-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-50</p>
+            <div class="relative brightness-50">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-75</p>
+            <div class="relative brightness-75">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-90</p>
+            <div class="relative brightness-90">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-100</p>
+            <div class="relative brightness-100">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-125</p>
+            <div class="relative brightness-125">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-150</p>
+            <div class="relative brightness-150">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              brightness-200</p>
+            <div class="relative brightness-200">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Contrast
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying contrast filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/contrast">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing element contrast
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "contrast-{amount?}" utilities to control an element’s contrast.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/contrast#changing-element-contrast">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-0
+            </p>
+            <div class="relative contrast-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-50
+            </p>
+            <div class="relative contrast-50">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-75
+            </p>
+            <div class="relative contrast-75">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-100</p>
+            <div class="relative contrast-100">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-125</p>
+            <div class="relative contrast-125">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-150</p>
+            <div class="relative contrast-150">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              contrast-200</p>
+            <div class="relative contrast-200">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Drop Shadow
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying drop-shadow filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/drop-shadow">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding a drop shadow
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "drop-shadow-{amount}" utilities to add a drop shadow to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/drop-shadow#adding-a-drop-shadow">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto bg-white">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">drop-shadow-md</p>
+            <div class="drop-shadow-md">
+              <div class="w-24 h-24 bg-white rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">drop-shadow-lg</p>
+            <div class="drop-shadow-lg">
+              <div class="w-24 h-24 bg-white rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">drop-shadow-xl</p>
+            <div class="drop-shadow-xl">
+              <div class="w-24 h-24 bg-white rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">drop-shadow-2xl</p>
+            <div class="drop-shadow-2xl">
+              <div class="w-24 h-24 bg-white rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Grayscale
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying grayscale filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grayscale">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Making an element grayscale
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "grayscale" and "grayscale-0" utilities to control whether an element should be
+    rendered as grayscale or in full color.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grayscale#making-an-element-grayscale">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-center sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">grayscale-0</p>
+            <div class="relative grayscale-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">grayscale</p>
+            <div class="relative grayscale">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Hue Rotate
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying hue-rotate filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/hue-rotate">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Rotating an element's hue
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "hue-rotate-{amount}" utilities to rotate the hue of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/hue-rotate#rotating-an-element-s-hue">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              hue-rotate-0</p>
+            <div class="relative hue-rotate-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              hue-rotate-15</p>
+            <div class="relative hue-rotate-15">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              hue-rotate-30</p>
+            <div class="relative hue-rotate-30">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              hue-rotate-60</p>
+            <div class="relative hue-rotate-60">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              hue-rotate-90</p>
+            <div class="relative hue-rotate-90">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              hue-rotate-180</p>
+            <div class="relative hue-rotate-180">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              -hue-rotate-30</p>
+            <div class="relative -hue-rotate-30">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              -hue-rotate-60</p>
+            <div class="relative -hue-rotate-60">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Invert
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying invert filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/invert">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Inverting an element's color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "invert" and "invert-0" utilities to control whether an element should be rendered with
+    inverted colors or normally.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/invert#inverting-an-element-s-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-center sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">invert-0</p>
+            <div class="relative invert-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">invert</p>
+            <div class="relative invert">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Saturate
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying saturation filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/saturate">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing element saturation
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "saturate-{amount}" utilities to control an element’s saturation.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/saturate#changing-element-saturation">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">saturate-0</p>
+            <div class="relative saturate-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">saturate-50</p>
+            <div class="relative saturate-50">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              saturate-100</p>
+            <div class="relative saturate-100">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              saturate-150</p>
+            <div class="relative saturate-150">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              saturate-200</p>
+            <div class="relative saturate-200">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Sepia
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying sepia filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/sepia">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding sepia filters
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "sepia" and "sepia-0" utilities to control whether an element should be rendered
+    as sepia or in full color.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/sepia#adding-sepia-filters">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-center sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              sepia-0
+            </p>
+            <div class="relative sepia-0">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              sepia-[.25]
+            </p>
+            <div class="relative sepia-[.25]">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              sepia-[.5]
+            </p>
+            <div class="relative sepia-[.5]">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              sepia-[.75]
+            </p>
+            <div class="relative sepia-[.75]">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              sepia
+            </p>
+            <div class="relative sepia">
+              <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ================= -->
+</div>
+
+</body>
+</html>

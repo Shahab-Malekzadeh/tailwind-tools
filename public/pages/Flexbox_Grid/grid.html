@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Grid Template Columns
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for specifying the columns in a grid layout.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-template-columns">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Specifying the columns in a grid
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "grid-cols-{n}" utilities to create grids with n equally sized columns.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-template-columns#specifying-the-columns-in-a-grid">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="grid grid-cols-4 gap-4 font-mono text-white text-sm text-center font-bold
+            leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">01</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">02</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">03</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">04</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">05</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">06</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">07</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">08</div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500">09</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Grid Column Start / End
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how elements are sized and placed across grid columns.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-column">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Spanning columns
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "col-span-{n}" utilities to make an element span n columns.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-column#spanning-columns">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 font-mono text-white text-sm text-center font-bold leading-6">
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">01</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">02</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">03</div>
+        <div class="p-4 rounded-lg shadow-lg bg-indigo-500 col-span-2">04</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">05</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">06</div>
+        <div class="p-4 rounded-lg shadow-lg bg-indigo-500 col-span-2">07</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Starting and ending lines
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "col-start-{n}" and "col-end-{n}" utilities to make an element start or end at the nth grid line.
+    These can also be combined with the "col-span-{n}" utilities to span a specific number of columns.
+
+    Note that CSS grid lines start at 1, not 0, so a full-width element in a 6-column grid would
+    start at line 1 and end at line 7.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-column#starting-and-ending-lines">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-6 gap-4 font-mono text-white text-sm text-center font-bold leading-6">
+        <div class="p-4 rounded-lg bg-gray-500/80"></div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500 col-start-2 col-span-4">01</div>
+        <div class="p-4 rounded-lg bg-gray-500/80"></div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500 col-start-1 col-end-3">02</div>
+        <div class="p-4 rounded-lg bg-gray-500/80"></div>
+        <div class="p-4 rounded-lg bg-gray-500/80"></div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500 col-end-7 col-span-2">03</div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500 col-start-1 col-end-7">04</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Grid Template Rows
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for specifying the rows in a grid layout.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-template-rows">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Specifying the rows in a grid
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "grid-rows-{n}" utilities to create grids with n equally sized rows.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-template-rows#specifying-the-rows-in-a-grid">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-rows-4 grid-flow-col gap-4 font-mono text-white text-sm
+      text-center font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">01</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">02</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">03</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">04</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">05</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">06</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">07</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">08</div>
+        <div class="p-4 rounded-lg shadow-lg bg-pink-500">09</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Grid Row Start / End
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how elements are sized and placed across grid rows.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-template-rows">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Spanning rows
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "row-span-{n}" utilities to make an element span n rows.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-row#spanning-rows">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-rows-3 grid-flow-col gap-4 font-mono text-white text-sm text-center
+          font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500 grid place-content-center row-span-3">01</div>
+        <div class="p-4 rounded-lg bg-fuchsia-300 grid place-content-center col-span-2
+          bg-fuchsia-800 text-fuchsia-400">02
+        </div>
+        <div class="p-4 rounded-lg shadow-lg bg-fuchsia-500 grid place-content-center row-span-2 col-span-2">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Starting and ending lines
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "row-start-{n}" and "row-end-{n}" utilities to make an element start or end at the nth grid line.
+    These can also be combined with the "row-span-{n}" utilities to span a specific number of rows.
+
+    Note that CSS grid lines start at 1, not 0, so a full-height element in a 3-row grid would start at
+    line 1 and end at line 4.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-row#spanning-rows">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-rows-3 grid-flow-col gap-4 font-mono text-white text-sm
+          text-center font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 sm:p-12 rounded-lg shadow-lg bg-blue-500 grid place-content-center
+        row-start-2 row-span-2">
+          01
+        </div>
+        <div class="p-4 sm:p-12 rounded-lg shadow-lg bg-blue-500 grid place-content-center
+        row-end-3 row-span-2">
+          02
+        </div>
+        <div class="p-4 sm:p-12 rounded-lg shadow-lg bg-blue-500 grid place-content-center
+        row-start-1 row-end-4">
+          03
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Grid Auto Flow
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how elements in a grid are auto-placed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-auto-flow">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling grid element placement
+  </h2>
+  <p class="text-2xl text-gray-400">
+    UUse the "grid-flow-{keyword}" utilities to control how the auto-placement algorithm works for a grid layout.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/grid-auto-flow#controlling-grid-element-placement">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="grid grid-cols-3 grid-rows-3 grid-flow-row-dense gap-4 font-mono text-white
+          text-sm text-center font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 col-span-2 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">01</div>
+        <div class="p-4 col-span-2 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">02</div>
+        <div class="p-4 rounded-lg shadow-lg bg-purple-500">03</div>
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">04</div>
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">05</div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

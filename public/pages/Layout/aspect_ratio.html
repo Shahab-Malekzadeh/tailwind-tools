@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aspect Ratio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Aspect Ratio
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the aspect ratio of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/aspect-ratio">more</a>
+  </p>
+
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-96 h-80 mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">aspect-auto</td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">aspect-ratio: auto;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">aspect-square</td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">aspect-ratio: 1 / 1;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">aspect-video</td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">aspect-ratio: 16 / 9;</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the aspect ratio
+  </h2>
+
+  <p class="text-2xl text-gray-400">
+    Use the
+    <span class="font-bold">
+      aspect-{ratio}
+    </span>
+    utilities to set the desired aspect ratio of an element. Resize the box to see the changes.
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+    <video class="w-full aspect-video" src="/Tailwind/public/video/demo.mp4"
+           poster="/Tailwind/public/img/video_thumb.png" controls></video>
+  </div>
+
+  <pre class="box-border text-gray-300 border border-gray-500 shadow-lg rounded-2xl
+  overflow-x-auto lg:w-[1000px] mx-auto my-10 p-1">
+<code class="block whitespace-pre">
+  &lt;video class="w-full aspect-video" ... >&lt;/video>
+</code>
+</pre>
+
+  <hr class="border-1 border-gray-500">
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+    <img class="w-full aspect-square" src="/Tailwind/public/img/nature.png"
+         alt="nature">
+  </div>
+
+  <pre class="box-border text-gray-300 border border-gray-500 shadow-lg rounded-2xl
+  overflow-x-auto lg:w-[1000px] mx-auto my-10 p-1">
+<code class="block whitespace-pre">
+  &lt;img class="w-full aspect-square" src="..." alt="...">
+</code>
+</pre>
+
+  <hr class="border-1 border-gray-500">
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+    <img src="/Tailwind/public/img/sky.png" alt="nature"
+         class="w-full aspect-auto">
+  </div>
+
+  <pre class="box-border text-gray-300 border border-gray-500 shadow-lg rounded-2xl
+  overflow-x-auto lg:w-[1000px] mx-auto my-10 p-1">
+<code class="block whitespace-pre">
+  &lt;img class="w-full aspect-auto" src="..." alt="...">
+</code>
+</pre>
+
+</div>
+
+</body>
+</html>

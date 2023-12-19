@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scroll Behavior
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the scroll behavior of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-behavior">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding smooth scrolling
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "scroll-smooth" utilities to enable smooth scrolling within an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gradient-color-stops#starting-color">more</a>
+  </p>
+
+  <pre class="box-border text-gray-300 border border-gray-500 shadow-lg rounded-2xl my-10
+  overflow-x-auto lg:w-[1000px] mx-auto p-1">
+<code class="block whitespace-pre">
+  &lt;html class="scroll-smooth">
+    &lt;!-- ... -->
+  &lt;/html>
+</code>
+</pre>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scroll Margin
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the scroll offset around items in a snap container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-margin">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the scroll margin
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "scroll-m{side}-{size}" utilities to set the scroll offset around items within a snap container.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-margin#setting-the-scroll-margin">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="w-full flex gap-12 snap-x overflow-x-auto py-14">
+        <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <div class="bg-pink-500/40 w-6 absolute top-0 left-0 bottom-0"></div>
+          <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <div class="bg-pink-500/40 w-6 absolute top-0 -left-6 bottom-0"></div>
+          <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <div class="bg-pink-500/40 w-6 absolute top-0 -left-6 bottom-0"></div>
+          <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <div class="bg-pink-500/40 w-6 absolute top-0 -left-6 bottom-0"></div>
+          <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-ml-6 shrink-0 relative first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <div class="bg-pink-500/40 w-6 absolute top-0 -left-6 bottom-0"></div>
+          <img class="relative shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scroll Padding
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling an element's scroll offset within a snap container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-padding">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the scroll padding
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "scroll-p{side}-{size}" utilities to set the scroll offset of an element within a snap container.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-padding#setting-the-scroll-padding">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="bg-pink-500/40 w-6 absolute left-0 top-0 bottom-0 rounded-l-lg"></div>
+      <div class="w-full flex gap-8 snap-x scroll-pl-6 overflow-x-auto py-14">
+        <div class="snap-start shrink-0 first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start shrink-0 first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start shrink-0 first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start shrink-0 first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start shrink-0 first:pl-6 last:pr-[calc(100%-21.5rem)]">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scroll Snap Align
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the scroll snap alignment of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-align">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Snapping to the center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "snap-center" utility to snap an element to its center when being scrolled inside a snap container.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-align#snapping-to-the-center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="relative">
+        <!-- Snap Point -->
+        <div class="flex ml-[50%] items-end justify-start pt-10 mb-6">
+          <div class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset
+              bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white
+              dark:highlight-white/10">
+            snap point
+          </div>
+          <div class="absolute top-0 bottom-0 left-1/2 border-l border-indigo-500"></div>
+        </div>
+        <!-- Contents -->
+        <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+          <div class="snap-center shrink-0">
+            <div class="shrink-0 w-4 sm:w-48"></div>
+          </div>
+          <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+          <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+          <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+          <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+          <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+          <div class="snap-center shrink-0">
+            <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+          <div class="snap-center shrink-0">
+            <div class="shrink-0 w-4 sm:w-48"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Snapping to the start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "snap-start" utility to snap an element to its start when being scrolled inside a snap container.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-align#snapping-to-the-start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="ml-6 flex items-end justify-start pt-10 mb-6">
+        <div
+            class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 left-6 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <div class="shrink-0 w-0"></div>
+        </div>
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-start scroll-mx-6 shrink-0">
+          <div class="shrink-0 w-3 sm:w-96 h-40 sm:-ml-[2px]"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Snapping to the end
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "snap-end" utility to snap an element to its end when being scrolled inside a snap container.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-align#snapping-to-the-end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="mr-6 flex items-end justify-end pt-10 mb-6">
+        <div
+            class="mr-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 right-6 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+        <div class="snap-end scroll-mx-6 shrink-0">
+          <div class="shrink-0 w-3 sm:w-10 sm:-mr-[2px]"></div>
+        </div>
+        <div class="snap-end scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-end scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-end scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-end scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-end scroll-mx-6 shrink-0">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-end scroll-mx-6 shrink-0 pr-6">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scroll Snap Stop
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling whether you can skip past possible snap positions.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-stop">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Forcing snap position stops
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "snap-always" utility together with the snap-mandatory utility to force
+    a snap container to always stop on an element before the user can continue scrolling to the next item.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-stop#forcing-snap-position-stops">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="flex ml-[50%] items-end justify-start pt-10 mb-6">
+        <div
+            class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 left-1/2 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+        <div class="snap-always snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-always snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-always snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-always snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-always snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-always snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Skipping snap position stops
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "snap-normal" utility to allow a snap container to skip past possible scroll snap positions.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-stop#skipping-snap-position-stops">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="flex ml-[50%] items-end justify-start pt-10 mb-6">
+        <div
+            class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 left-1/2 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x overflow-x-auto pb-14">
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+        <div class="snap-normal snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-normal snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-normal snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-normal snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-normal snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-normal snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 object-cover rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scroll Snap Type
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how strictly snap points are enforced in a snap container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-type">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Horizontal scroll snapping
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "snap-x" utility to enable horizontal scroll snapping within an element.
+    <br>
+    For scroll snapping to work, you need to also set the scroll snap alignment on the children within the element.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-type#horizontal-scroll-snapping">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="flex ml-[50%] items-end justify-start pt-10 mb-6">
+        <div
+            class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 left-1/2 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x overflow-x-auto pb-14">
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Mandatory scroll snapping
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the snap-mandatory utility to force a snap container to always come to rest on a snap point.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-type#mandatory-scroll-snapping">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="flex ml-[50%] items-end justify-start pt-10 mb-6">
+        <div
+            class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 left-1/2 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-14">
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Proximity scroll snapping
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the snap-proximity utility to make a snap container come to rest on snap points
+    that are close in proximity. This is the browser default.
+    <br>
+    Scroll in the grid of images to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scroll-snap-type#proximity-scroll-snapping">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[800px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <!-- Snap Point -->
+      <div class="flex ml-[50%] items-end justify-start pt-10 mb-6">
+        <div
+            class="ml-2 rounded font-mono text-[0.625rem] leading-6 px-1.5 ring-1 ring-inset bg-indigo-50 text-indigo-600 ring-indigo-600 dark:bg-indigo-500 dark:ring-0 dark:text-white dark:highlight-white/10">
+          snap point
+        </div>
+        <div class="absolute top-0 bottom-0 left-1/2 border-l border-indigo-500"></div>
+      </div>
+      <!-- Contents -->
+      <div class="relative w-full flex gap-6 snap-x snap-proximity overflow-x-auto pb-14">
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0 first:pl-8 last:pr-8">
+          <img class="shrink-0 w-80 h-40 rounded-lg shadow-xl bg-white"
+               src="/Tailwind/public/img/mountain_square.png">
+        </div>
+        <div class="snap-center shrink-0">
+          <div class="shrink-0 w-4 sm:w-48"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

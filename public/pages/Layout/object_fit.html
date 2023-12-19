@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object Fit</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Object Fit
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how a replaced element's content should be resized.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit">more</a>
+  </p>
+
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-[500px] h-80 mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-contain
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-fit: contain;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-cover
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-fit: cover;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-fill
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-fit: fill;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-none
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-fit: none;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-scale-down
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-fit: scale-down;</td>
+      </tr>
+      <tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Resizing to cover a container
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Resize an element’s content to cover its container using .object-cover.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit#resizing-to-cover-a-container">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="text-center rounded-lg overflow-hidden w-56 sm:w-96 mx-auto">
+        <img class="object-cover h-48 w-full "
+             src="/Tailwind/public/img/mountain.png">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Containing an element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Resize an element’s content to stay contained within its container using .object-contain.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit#containing-an-element">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="relative rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto">
+        <div class="absolute inset-0 opacity-50 bg-gray-500/40"></div>
+        <img class="relative z-10 object-contain h-48 w-full"
+             src="/Tailwind/public/img/mountain.png">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretching to fit a container
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Stretch an element’s content to fit its container using .object-fill.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit#stretching-to-fit-a-container">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="bg-stripes-sky-blue rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto">
+        <img class="object-fill h-48 w-full"
+             src="/Tailwind/public/img/mountain.png">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Scaling down if too large
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Display an element’s content at its original size but scale it down to fit its container if necessary using
+    .object-scale-down.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit#scaling-down-if-too-large">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="relative rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto">
+        <div class="absolute inset-0 opacity-50 bg-gray-500/40"></div>
+        <img class="relative z-10 object-scale-down h-48 w-96"
+             src="/Tailwind/public/img/mountain.png">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Using an element's original size
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Display an element’s content at its original size ignoring the container size using .object-none.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit#using-an-element-s-original-size">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="relative rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto">
+        <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+        <img class="relative z-10 object-none h-48 w-full"
+             src="/Tailwind/public/img/mountain.png">
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

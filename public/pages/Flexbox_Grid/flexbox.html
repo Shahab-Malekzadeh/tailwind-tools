@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex Box</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Flex Basis
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the initial size of flex items.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-basis">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the flex basis
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "basis-{size}" utilities to set the initial size of flex items.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-basis#setting-the-flex-basis">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-row space-x-4 font-mono text-white text-sm font-bold leading-6">
+        <div class="basis-1/4 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+        <div class="basis-1/4 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+        <div class="basis-1/2 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Flex Direction
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the direction of flex items.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-direction">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Row
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-row" to position flex items horizontally in the same direction as text:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-direction#row">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-row space-x-4 font-mono text-white text-sm font-bold leading-6">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Row reversed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-row-reverse" to position flex items horizontally in the opposite direction:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-direction#row-reversed">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-row-reverse space-x-reverse space-x-4 font-mono text-white text-sm font-bold leading-6">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Column
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-col" to position flex items vertically:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-direction#column">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col mx-auto space-y-4 font-mono text-white text-sm font-bold leading-6 max-w-xs">
+        <div class="p-4 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">01</div>
+        <div class="p-4 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">02</div>
+        <div class="p-4 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Column reversed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-col-reverse" to position flex items vertically in the opposite direction:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-direction#column">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col-reverse mx-auto space-y-reverse space-y-4 font-mono
+          text-white text-sm font-bold leading-6 max-w-xs">
+        <div class="p-4 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg">01</div>
+        <div class="p-4 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg">02</div>
+        <div class="p-4 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Flex Wrap
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how flex items wrap.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-wrap">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    flex-nowrap
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-nowrap" to prevent flex items from wrapping, causing inflexible items to overflow the container if
+    necessary:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-wrap#don-t-wrap">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-nowrap gap-4 font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-2/5 flex-none last:pr-8">
+          <div class="p-4 w-full rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">01</div>
+        </div>
+        <div class="w-2/5 flex-none last:pr-8">
+          <div class="p-4 w-full rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">02</div>
+        </div>
+        <div class="w-2/5 flex-none last:pr-8">
+          <div class="p-4 w-full rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">03</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Wrap normally
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-wrap" to allow flex items to wrap:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-wrap#wrap-normally">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-wrap gap-4 font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 w-2/5 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">01</div>
+        <div class="p-4 w-2/5 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">02</div>
+        <div class="p-4 w-2/5 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Wrap reversed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-wrap-reverse" to wrap flex items in the reverse direction:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-wrap#wrap-reversed">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-wrap-reverse gap-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 w-2/5 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+        <div class="p-4 w-2/5 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+        <div class="p-4 w-2/5 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Flex
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how flex items both grow and shrink.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Initial
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-initial" to allow a flex item to shrink but not grow, taking into account its initial size:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex#initial">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="mt-2 flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 flex-none w-14 h-14 rounded-lg flex items-center justify-center
+            bg-blue-300 dark:bg-blue-800 dark:text-blue-500">
+          01
+        </div>
+        <div class="p-4 flex-initial w-24 sm:w-64 rounded-lg flex items-center justify-center
+            bg-blue-500 shadow-lg">
+          02
+        </div>
+        <div class="p-4 flex-initial w-14 sm:w-32 rounded-lg flex items-center justify-center
+            bg-blue-500 shadow-lg">
+          03
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Flex 1
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-1" to allow a flex item to grow and shrink as needed, ignoring its initial size:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex#flex-1">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="mt-2 flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 flex-none w-14 h-14 rounded-lg flex items-center justify-center
+            bg-pink-300 dark:bg-pink-800 dark:text-pink-400">
+          01
+        </div>
+        <div class="p-4 flex-1 w-64 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg">02</div>
+        <div class="p-4 flex-1 w-32 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Auto
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-auto" to allow a flex item to grow and shrink, taking into account its initial size:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex#auto">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="mt-2 flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 flex-none w-14 h-14 rounded-lg flex items-center justify-center
+            bg-violet-300 dark:bg-violet-800 dark:text-violet-400">
+          01
+        </div>
+        <div class="p-4 flex-auto w-64 rounded-lg flex items-center justify-center bg-violet-500 shadow-lg">02</div>
+        <div class="p-4 flex-auto w-32 rounded-lg flex items-center justify-center bg-violet-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    None
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "flex-none" to prevent a flex item from growing or shrinking:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex#none">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="flex-none last:pr-8 sm:last:pr-0">
+          <div class="p-4 w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-300
+              dark:bg-indigo-800 dark:text-indigo-400">
+            01
+          </div>
+        </div>
+        <div class="flex-none last:pr-8 sm:last:pr-0">
+          <div class="p-4 w-72 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">
+            02
+          </div>
+        </div>
+        <div class="flex-1 last:pr-8 sm:last:pr-0">
+          <div class="p-4 rounded-lg flex items-center justify-center bg-indigo-300 bg-indigo-800 text-indigo-400">
+            03
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Flex Grow
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how flex items grow.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-grow">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Grow
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "grow" to allow a flex item to grow to fill any available space:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-grow#grow">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 flex-none rounded-lg flex items-center justify-center
+        bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+          01
+        </div>
+        <div class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">
+          02
+        </div>
+        <div class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center
+        bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+          03
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Don't grow
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "grow-0" to prevent a flex item from growing:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-grow#don-t-grow">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-stripes-pink rounded-lg">
+        <div class="p-4 grow rounded-lg flex items-center justify-center bg-pink-300
+                dark:bg-pink-800 dark:text-pink-400">
+          01
+        </div>
+        <div class="shrink-0 w-14 h-14 grow-0 rounded-lg flex items-center justify-center
+            bg-pink-500 shadow-lg">
+          02
+        </div>
+        <div class="p-4 grow rounded-lg hidden md:flex items-center justify-center bg-pink-300
+                dark:bg-pink-800 dark:text-pink-400">
+          03
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Flex Shrink
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how flex items shrink.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-shrink">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Shrink
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "shrink" to allow a flex item to shrink if needed:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-shrink#shrink">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center
+            bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+          01
+        </div>
+        <div class="p-4 w-64 shrink rounded-lg flex items-center justify-center
+        bg-indigo-500 shadow-lg">
+          02
+        </div>
+        <div class="p-4 w-14 h-14 flex-none rounded-lg hidden sm:flex items-center justify-center
+            bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">
+          03
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Don't shrink
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "shrink-0" to prevent a flex item from shrinking:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/flex-shrink#don-t-shrink">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 flex-1 rounded-lg flex items-center justify-center bg-blue-300
+            dark:bg-blue-800 dark:text-blue-500">
+          01
+        </div>
+        <div class="p-4 w-16 sm:w-64 shrink-0 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">
+          02
+        </div>
+        <div class="p-4 flex-1 rounded-lg hidden sm:flex items-center justify-center bg-blue-300
+            dark:bg-blue-800 dark:text-blue-500">
+          03
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

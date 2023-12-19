@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Typography</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Font Family
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the font family of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-family">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the font family
+  </h2>
+  <p class="text-2xl text-gray-400">
+    You can control the typeface of text using the font family utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-family#setting-the-font-family">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-sans</span>
+          <p class="font-sans text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-serif</span>
+          <p class="font-serif text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-mono</span>
+          <p class="font-mono text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Font Size
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the font size of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-size">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the font size
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control the font size of an element using the "text-{size}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-family#setting-the-font-family">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-xs</span>
+          <p class="text-xs font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-sm</span>
+          <p class="text-sm font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-base</span>
+          <p class="text-base font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-lg</span>
+          <p class="text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-xl</span>
+          <p class="text-xl font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-2xl</span>
+          <p class="text-2xl font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">text-3xl</span>
+          <p class="text-3xl font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Font Smoothing
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the font smoothing of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-smoothing">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Applying font smoothing
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "subpixel-antialiased" utility to render text using subpixel antialiasing and the "antialiased" utility to
+    render text using grayscale antialiasing.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-smoothing#applying-font-smoothing">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span
+              class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">
+            normal
+          </span>
+          <p class="text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span
+              class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">
+            subpixel-antialiased
+          </span>
+          <p class="subpixel-antialiased text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">
+            antialiased
+          </span>
+          <p class="antialiased text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Font Style
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the style of text.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-style">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Italicizing text
+  </h2>
+  <p class="text-2xl text-gray-400">
+    The "italic" utility can be used to make text italic. Likewise, the "not-italic" utility can be used to display text
+    normally — typically to reset italic text at different breakpoints.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-style#italicizing-text">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">italic</span>
+          <p class="italic text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">not-italic</span>
+          <p class="not-italic text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Font Weight
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the font weight of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-weight">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the font weight
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control the font weight of an element using the "font-{weight}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/font-weight#setting-the-font-weight">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-thin</span>
+          <p class="font-thin text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-extralight</span>
+          <p class="font-extralight text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-light</span>
+          <p class="font-light text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-normal</span>
+          <p class="font-normal text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-medium</span>
+          <p class="font-medium text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-semibold</span>
+          <p class="font-semibold text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-bold</span>
+          <p class="font-bold text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-extrabold</span>
+          <p class="font-extrabold text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">font-black</span>
+          <p class="font-black text-lg text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Letter Spacing
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the tracking (letter spacing) of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/letter-spacing">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the letter spacing
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control the letter spacing of an element using the "tracking-{size}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/letter-spacing#setting-the-letter-spacing">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">-tracking-[2px]</span>
+          <p class="-tracking-[2px] text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">tracking-tighter</span>
+          <p class="tracking-tighter text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">tracking-tight</span>
+          <p class="tracking-tight text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">tracking-normal</span>
+          <p class="tracking-normal text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">tracking-wide</span>
+          <p class="tracking-wide text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">tracking-wider</span>
+          <p class="tracking-wider text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">tracking-widest</span>
+          <p class="tracking-widest text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Line Height
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the leading (line height) of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/line-height">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Relative line-heights
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "leading-none", "leading-tight", "leading-snug", "leading-normal", "leading-relaxed", and "leading-loose"
+    utilities to give an element a relative line-height based on its current font-size.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/line-height#relative-line-heights">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-none</span>
+          <p class="leading-none text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-tight</span>
+          <p class="leading-tight text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-snug</span>
+          <p class="leading-snug text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-normal</span>
+          <p class="leading-normal text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-relaxed</span>
+          <p class="leading-relaxed text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-loose</span>
+          <p class="leading-loose text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Fixed line-heights
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "leading-{size}" utilities to give an element a fixed line-height, irrespective of the current font-size.
+    These are useful when you need very precise control over an element’s final size.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/line-height#fixed-line-heights">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-8</span>
+          <p class="leading-8 text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-9</span>
+          <p class="leading-9 text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">leading-10</span>
+          <p class="leading-10 text-slate-900 dark:text-slate-200">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    List Style Type
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the bullet/number style of a list.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/list-style-type">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the list style type
+  </h2>
+  <p class="text-2xl text-gray-400">
+    To create bulleted or numeric lists, use the "list-disc" and "list-decimal" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/list-style-type#setting-the-list-style-type">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">list-disc</span>
+          <ul class="list-disc list-inside text-slate-900 dark:text-slate-200">
+            <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+            <li>And I'd like to take a minute just sit right there</li>
+            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+          </ul>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">list-decimal</span>
+          <ul class="list-decimal list-inside text-slate-900 dark:text-slate-200">
+            <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+            <li>And I'd like to take a minute just sit right there</li>
+            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+          </ul>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">list-none</span>
+          <ul class="list-none list-inside text-slate-900 dark:text-slate-200">
+            <li>Now this is a story all about how, my life got flipped-turned upside down</li>
+            <li>And I'd like to take a minute just sit right there</li>
+            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    List Style Position
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the position of bullets/numbers in lists.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/list-style-position">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the list style position
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control the position of the markers and text indentation in a list using the "list-inside" and "list-outside"
+    utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/list-style-position#setting-the-list-style-position">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[600px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row gap-8">
+        <div class="relative">
+          <div class="absolute left-8 -top-8 -bottom-8 w-px bg-pink-400/40 dark:bg-rose-400/20"></div>
+          <p class="font-medium text-sm text-slate-500 font-mono mb-3 ml-8 dark:text-slate-400">list-inside</p>
+          <ul class="list-disc list-inside text-slate-700 bg-white rounded-xl shadow-lg ring-1 ring-slate-900/5 p-4 pl-8 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400">
+            <li>5 cups chopped Porcini mushrooms</li>
+            <li>1/2 cup of olive oil</li>
+            <li>3lb of celery</li>
+          </ul>
+        </div>
+        <div class="relative">
+          <div class="absolute left-8 -top-0 sm:-top-8 -bottom-8 w-px bg-pink-400/40 dark:bg-rose-400/20"></div>
+          <p class="font-medium text-sm text-slate-500 font-mono mb-3 ml-8 dark:text-slate-400">list-outside</p>
+          <ul class="list-disc list-outside text-slate-700 bg-white rounded-xl shadow-lg ring-1 ring-slate-900/5 p-4 pl-8 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400">
+            <li>5 cups chopped Porcini mushrooms</li>
+            <li>1/2 cup of olive oil</li>
+            <li>3lb of celery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Align
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the alignment of text.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-align">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the text alignment
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control the text alignment of an element using the "text-left", "text-center", "text-right", and "text-justify"
+    utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-align#setting-the-text-alignment">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 sm:px-0">
+        <div
+            class="mx-auto max-w-xl bg-white shadow-xl p-8 text-slate-700 text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+          <span class="font-medium text-sm text-slate-500/70 font-mono mb-3">text-left</span>
+          <p class="text-left">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+          <br>
+          <span class="font-medium text-sm text-slate-500/70 font-mono mb-3">text-right</span>
+          <p class="text-right">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+          <br>
+          <span class="font-medium text-sm text-slate-500/70 font-mono mb-3">text-center</span>
+          <p class="text-center">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+          <br>
+          <span class="font-medium text-sm text-slate-500/70 font-mono mb-3">text-justify</span>
+          <p class="text-justify">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+          <br>
+          <span class="font-medium text-sm text-slate-500/70 font-mono mb-3">text-start</span>
+          <p class="text-start">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+          <br>
+          <span class="font-medium text-sm text-slate-500/70 font-mono mb-3">text-end</span>
+          <p class="text-end">
+            So I started to walk into the water. I won't lie to you boys, I was terrified. But I pressed on, and as I
+            made my way past the breakers a strange calm came over me. I don't know if it was divine intervention or the
+            kinship of all living things but I tell you Jerry at that moment, I <em>was</em> a marine biologist.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Decoration
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the decoration of text.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the text decoration
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control how text is decorated with the "underline", "no-underline", and "line-through" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration#setting-the-text-decoration">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline</span>
+          <p class="underline text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">overline</span>
+          <p class="overline text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">line-through</span>
+          <p class="line-through text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">no-underline</span>
+          <p class="text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Decoration Color
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the color of text decorations.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration-color">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the text decoration color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "decoration-{color}" utilities to change the color of an element’s text decoration.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration-color#setting-the-text-decoration-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white p-8 text-slate-900 shadow-lg max-w-sm mx-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+        <p class="text-sm leading-6">
+          I’m Derek, an astro-engineer based in Tattooine. I like to build X-Wings at
+          <a href="#" class="font-bold underline decoration-sky-500 decoration-2 dark:text-slate-200">
+            My Company, Inc
+          </a>
+          . Outside of work, I like to
+          <a href="#" class="font-bold underline decoration-pink-500 decoration-2 dark:text-slate-200">
+            watch pod-racing
+          </a>
+          and have
+          <a href="#" class="font-bold underline decoration-indigo-500 decoration-2 dark:text-slate-200">
+            light-saber
+          </a>
+          fights.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Decoration Style
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the style of text decorations.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration-style">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the text decoration style
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "decoration-{style}" utilities to change the style of an element’s text decoration.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration-style#setting-the-text-decoration-style">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8 text-slate-900 dark:text-slate-200">
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-solid</div>
+          <p class="text-lg font-medium underline decoration-solid">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-double</div>
+          <p class="text-lg font-medium underline decoration-double">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-dotted</div>
+          <p class="text-lg font-medium underline decoration-dotted">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-dashed</div>
+          <p class="text-lg font-medium underline decoration-dashed">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-wavy</div>
+          <p class="text-lg font-medium underline decoration-wavy">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Decoration Thickness
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the thickness of text decorations.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration-thickness">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the text decoration thickness
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "decoration-{width}" utilities to change the thickness of an element’s text decoration.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-decoration-thickness#setting-the-text-decoration-thickness">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8 text-slate-900 dark:text-slate-200">
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-auto</div>
+          <p class="text-lg font-medium underline decoration-auto">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-from-font</div>
+          <p class="text-lg font-medium underline decoration-from-font">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-0</div>
+          <p class="text-lg font-medium underline decoration-0">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-1</div>
+          <p class="text-lg font-medium underline decoration-1">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-2</div>
+          <p class="text-lg font-medium underline decoration-2">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-4</div>
+          <p class="text-lg font-medium underline decoration-4">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">decoration-8</div>
+          <p class="text-lg font-medium underline decoration-8">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Underline Offset
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the offset of a text underline.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-underline-offset">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the underline offset
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "underline-offset-{width}" utilities to change the offset of a text underline.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-underline-offset#setting-the-underline-offset">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8 text-slate-900 dark:text-slate-200">
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline-offset-auto</div>
+          <p class="text-lg font-medium underline underline-offset-auto">The quick brown fox jumps over the lazy
+            dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline-offset-0</div>
+          <p class="text-lg font-medium underline underline-offset-0">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline-offset-1</div>
+          <p class="text-lg font-medium underline underline-offset-1">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline-offset-2</div>
+          <p class="text-lg font-medium underline underline-offset-2">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline-offset-4</div>
+          <p class="text-lg font-medium underline underline-offset-4">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        <div>
+          <div class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">underline-offset-8</div>
+          <p class="text-lg font-medium underline underline-offset-8">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Transform
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the transformation of text.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-transform">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Transforming text
+  </h2>
+  <p class="text-2xl text-gray-400">
+    The "uppercase" and "lowercase" will uppercase and lowercase text respectively, whereas "capitalize" utility will
+    convert
+    text to title-case. The "normal-case" utility can be used to preserve the original casing — typically to reset
+    capitalization at different breakpoints.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-underline-offset#setting-the-underline-offset">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col gap-8">
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">normal-case</span>
+          <p class="normal-case text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">uppercase</span>
+          <p class="uppercase text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">lowercase</span>
+          <p class="lowercase text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+        <div>
+          <span class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">capitalize</span>
+          <p class="capitalize text-lg font-medium text-slate-900 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Overflow
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling text overflow in an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-overflow">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Truncate
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "truncate" to truncate overflowing text with an ellipsis (…) if needed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-overflow#truncate">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 sm:px-0">
+        <div
+            class="mx-auto max-w-sm bg-white shadow-xl p-8 text-slate-700 text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+          <p class="truncate">
+            The longest word in any of the major English language dictionaries is <span
+              class="text-slate-900 font-medium">pneumonoultramicroscopicsilicovolcanoconiosis,</span> a word that
+            refers to a lung disease contracted from the inhalation of very fine silica particles, specifically from a
+            volcano; medically, it is the same as silicosis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Ellipsis
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "text-ellipsis" to truncate overflowing text with an ellipsis (…) if needed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-overflow#ellipsis">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 sm:px-0">
+        <div
+            class="mx-auto max-w-sm bg-white shadow-xl p-8 text-slate-700 text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+          <p class="text-ellipsis overflow-hidden">
+            The longest word in any of the major English language dictionaries is <span
+              class="text-slate-900 font-medium dark:text-slate-200">pneumonoultramicroscopicsilicovolcanoconiosis,</span>
+            a word that refers to a lung disease contracted from the inhalation of very fine silica particles,
+            specifically from a volcano; medically, it is the same as silicosis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Text Indent
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the amount of empty space shown before text in a block.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-indent">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding a text indent
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "indent-{width}" utilities to set the amount of empty space (indentation) that’s shown before text in a
+    block.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/text-indent#adding-a-text-indent">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white p-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto leading-6 dark:bg-slate-800 dark:text-slate-400">
+        <p class="indent-8">
+          So I started to walk into the water. I won't lie to you boys, I was
+          terrified. But I pressed on, and as I made my way past the breakers
+          a strange calm came over me. I don't know if it was divine intervention
+          or the kinship of all living things but I tell you Jerry at that moment,
+          I <em>was</em> a marine biologist.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Vertical Align
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the vertical alignment of an inline or table-cell box.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Baseline
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "align-baseline" to align the baseline of an element with the baseline of its parent.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align#baseline">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="bg-white rounded-lg shadow-lg ring-1 ring-slate-900/5 py-4 max-w-md mx-auto
+          dark:bg-slate-800 dark:ring-0 dark:highlight-white/5">
+        <div class="leading-none relative">
+      <span class="w-0 h-8 inline-block align-baseline">
+        <span class="absolute top-0 border-slate-200 border-t border-b border-dashed w-full h-8
+            dark:border-slate-700"></span>
+        <span class="absolute top-0 border-slate-200 border-b border-dashed w-full h-4
+        dark:border-slate-700"></span>
+      </span>
+          <span class="relative z-10 text-slate-700 font-medium px-4 dark:text-slate-200">
+            The quick brown fox jumps over the lazy dog.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Top
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use align-top to align the top of an element and its descendants with the top of the entire line.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align#top">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="bg-white rounded-lg shadow-lg ring-1 ring-slate-900/5 py-4 max-w-md mx-auto dark:bg-slate-800 dark:ring-0 dark:highlight-white/5">
+        <div class="leading-none relative">
+      <span class="w-0 h-8 inline-block align-top">
+        <span class="absolute top-0 border-slate-200 border-t border-b border-dashed
+            w-full h-8 dark:border-slate-700"></span>
+        <span class="absolute top-0 border-slate-200 border-b border-dashed w-full
+        h-4 dark:border-slate-700"></span>
+      </span>
+          <span class="relative z-10 text-slate-700 font-medium px-4 dark:text-slate-200">The quick brown fox jumps over the lazy dog.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Middle
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use align-middle to align the middle of an element with the baseline plus half the x-height of the parent.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align#middle">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="bg-white rounded-lg shadow-lg ring-1 ring-slate-900/5 py-4 max-w-md mx-auto
+          dark:bg-slate-800 dark:ring-0 dark:highlight-white/5">
+        <div class="leading-none relative">
+      <span class="w-0 h-8 inline-block align-middle">
+        <span class="absolute top-0 border-slate-200 border-t border-b border-dashed w-full h-8
+            dark:border-slate-700"></span>
+        <span class="absolute top-0 border-slate-200 border-b border-dashed w-full h-4
+        dark:border-slate-700"></span>
+      </span>
+          <span class="relative z-10 text-slate-700 font-medium px-4 dark:text-slate-200">The quick brown fox jumps over the lazy dog.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Bottom
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "align-bottom" to align the bottom of an element and its descendants with the bottom of the entire line.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align#bottom">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="bg-white rounded-lg shadow-lg ring-1 ring-slate-900/5 py-4 max-w-md mx-auto
+          dark:bg-slate-800 dark:ring-0 dark:highlight-white/5">
+        <div class="leading-none relative">
+      <span class="w-0 h-8 inline-block align-bottom">
+        <span class="absolute top-0 border-slate-200 border-t border-b border-dashed w-full h-8
+        dark:border-slate-700"></span>
+        <span class="absolute top-0 border-slate-200 border-b border-dashed w-full h-4 dark:border-slate-700"></span>
+      </span>
+          <span class="relative z-10 text-slate-700 font-medium px-4 dark:text-slate-200">The quick brown fox jumps over the lazy dog.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Text Top
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "align-text-top" to align the top of an element with the top of the parent element’s font.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align#text-top">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="bg-white rounded-lg shadow-lg ring-1 ring-slate-900/5 py-4 max-w-md mx-auto
+          dark:bg-slate-800 dark:ring-0 dark:highlight-white/5">
+        <div class="leading-none relative">
+      <span class="w-0 h-8 inline-block align-text-top">
+        <span class="absolute top-0 border-slate-200 border-t border-b border-dashed w-full h-8
+        dark:border-slate-700"></span>
+        <span class="absolute top-0 border-slate-200 border-b border-dashed w-full h-4 dark:border-slate-700"></span>
+      </span>
+          <span class="relative z-10 text-slate-700 font-medium px-4 dark:text-slate-200">The quick brown fox jumps over the lazy dog.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Text Bottom
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "align-text-bottom" to align the bottom of an element with the bottom of the parent element’s font.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/vertical-align#text-bottom">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="bg-white rounded-lg shadow-lg ring-1 ring-slate-900/5 py-4 max-w-md mx-auto
+          dark:bg-slate-800 dark:ring-0 dark:highlight-white/5">
+        <div class="leading-none relative">
+      <span class="w-0 h-8 inline-block align-text-bottom">
+        <span class="absolute top-0 border-slate-200 border-t border-b border-dashed w-full h-8
+            dark:border-slate-700"></span>
+        <span class="absolute top-0 border-slate-200 border-b border-dashed w-full h-4 dark:border-slate-700"></span>
+      </span>
+          <span class="relative z-10 text-slate-700 font-medium px-4 dark:text-slate-200">The quick brown fox jumps over the lazy dog.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Whitespace
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling an element's white-space property.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/whitespace">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Normal
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "whitespace-normal" to cause text to wrap normally within an element. Newlines and spaces will be collapsed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/whitespace#normal">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white p-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+        <div class="whitespace-normal">
+          Hey everyone!
+          It's almost 2022 and we still don't know if there is aliens living among us, or do we? Maybe the person
+          writing this is an alien.
+          You will never know.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    No Wrap
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "whitespace-nowrap" to prevent text from wrapping within an element. Newlines and spaces will be collapsed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/whitespace#no-wrap">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+        <div class="whitespace-nowrap">
+          Hey everyone!
+          It's almost 2022 and we still don't know if there is aliens living among us, or do we? Maybe the person
+          writing this is an alien.
+          You will never know.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Pre
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "whitespace-pre" to preserve newlines and spaces within an element. Text will not be wrapped.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/whitespace#pre">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+        <div class="whitespace-pre">
+          Hey everyone!<br>
+          It's almost 2022 and we still don't know if there is aliens living among us, or do we? Maybe the person
+          writing this is an alien.<br>
+          You will never know.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Pre Line
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "whitespace-pre-line" to preserve newlines but not spaces within an element. Text will be wrapped normally.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/whitespace#pre-line">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+        <div class="whitespace-pre-line">Hey everyone!<br>
+          It's almost 2022 and we still don't know if there is aliens living among us, or do we? Maybe the person
+          writing this is an alien.<br>
+          You will never know.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Pre Wrap
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "whitespace-pre-wrap" to preserve newlines and spaces within an element. Text will be wrapped normally.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/whitespace#pre-wrap">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div
+          class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400">
+        <div class="whitespace-pre-wrap">Hey everyone!<br>
+          It's almost 2022 and we still don't know if there is aliens living among us, or do we? Maybe the person
+          writing this is an alien.<br>
+          You will never know.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Word Break
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling word breaks in an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/word-break">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Normal
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "break-normal" to only add line breaks at normal word break points.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/word-break#normal">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="overflow-x-scroll sm:overflow-x-visible px-4">
+        <div class="mx-auto max-w-sm bg-white shadow-xl p-12 text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+          <p class="break-normal">The longest word in any of the major English language dictionaries is
+            <span class="text-slate-900 font-medium dark:text-slate-200">
+              pneumonoultramicroscopicsilicovolcanoconiosis,
+            </span>
+            a word that refers to a lung disease contracted from the inhalation of very fine silica particles,
+            specifically from a volcano; medically, it is the same as silicosis.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Break Words
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "break-words" to add line breaks mid-word if needed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/word-break#break-words">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4">
+        <div class="mx-auto max-w-sm bg-white shadow-xl p-12 text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+          <p class="break-words">The longest word in any of the major English language dictionaries is
+            <span class="text-slate-900 font-medium dark:text-slate-200">
+        pneumonoultramicroscopicsilicovolcanoconiosis,
+      </span>
+            a word that refers to a lung disease contracted from the inhalation of very fine silica particles,
+            specifically from a volcano; medically, it is the same as silicosis.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Break All
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "break-all" to add line breaks whenever necessary, without trying to preserve whole words.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/word-break#break-all">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4">
+        <div class="mx-auto max-w-sm bg-white shadow-xl p-12 text-slate-500 dark:bg-slate-800 dark:text-slate-400">
+          <p class="break-all">The longest word in any of the major English language dictionaries is
+            <span class="text-slate-900 font-medium dark:text-slate-200">
+        pneumonoultramicroscopicsilicovolcanoconiosis,
+      </span>
+            a word that refers to a lung disease contracted from the inhalation of very fine silica particles,
+            specifically from a volcano; medically, it is the same as silicosis.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Content
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the content of the before and after pseudo-elements.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/word-break">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting a pseudo-element's content
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "content-{value}" utilities along with the "before" and "after" variant modifiers to set the contents of the
+    "::before" and "::after" pseudo-elements.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/content#setting-a-pseudo-element-s-content">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4 sm:px-0">
+        <div class="p-8 w-full max-w-xl mx-auto bg-white shadow-lg text-slate-500
+            dark:bg-slate-800 dark:text-slate-400">
+          Higher resolution means more than just a better-quality image. With a Retina 6K display,
+          <a href="https://www.apple.com/pro-display-xdr/"
+             class="text-blue-600 dark:text-sky-400 font-medium after:content-['_↗'] after:text-sm after:font-bold"
+             target="_blank">
+            Pro Display XDR
+          </a>
+          gives you nearly 40 percent more screen real estate than a 5K display.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================================================= -->
+</div>
+
+
+</body>
+</html>

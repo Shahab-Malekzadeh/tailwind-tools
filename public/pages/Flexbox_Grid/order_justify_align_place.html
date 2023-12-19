@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Justify Align Place</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Order
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the order of flex and grid items.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/order">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Ordering flex and grid items
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "order-{order}" to render flex and grid items in a different order than they appear in the DOM.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/order#ordering-flex-and-grid-items">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-between font-mono text-white text-sm font-bold leading-6">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg order-last">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Gap
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling gutters between grid and flexbox items.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gap">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the gap between elements
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "gap-{size}" to change the gap between both rows and columns in grid and flexbox layouts.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gap#setting-the-gap-between-elements">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-2 gap-4 font-mono text-white text-sm text-center font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="p-4 rounded-lg shadow-lg bg-violet-500">01</div>
+        <div class="p-4 rounded-lg shadow-lg bg-violet-500">02</div>
+        <div class="p-4 rounded-lg shadow-lg bg-violet-500">03</div>
+        <div class="p-4 rounded-lg shadow-lg bg-violet-500">04</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing row and column gaps independently
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "gap-x-{size}" and "gap-y-{size}" to change the gap between rows and columns independently.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gap#changing-row-and-column-gaps-independently">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-x-8 gap-y-4 font-mono text-white text-sm text-center
+          font-bold leading-6  bg-gray-500/40 rounded-lg">
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500">01</div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500">02</div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500">03</div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500">04</div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500">05</div>
+        <div class="p-4 rounded-lg shadow-lg bg-sky-500">06</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Justify Content
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how flex and grid items are positioned along a container's main axis.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gap">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-start" to justify items against the start of the container’s main axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-content#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-start space-x-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-center" to justify items along the center of the container’s main axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-content#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-center space-x-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-end" to justify items against the end of the container’s main axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-content#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-end space-x-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space between
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-between" to justify items along the container’s main axis such that there is an equal amount of space
+    between each item:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-content#space-between">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-between space-x-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space around
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-around" to justify items along the container’s main axis such that there is an equal amount of space on
+    each side of each item:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-content#space-around">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-around space-x-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space evenly
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-evenly" to justify items along the container’s main axis such that there is an equal amount of space
+    around each item, but also accounting for the doubling of space you would normally see between each item when using
+    "justify-around":
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-content#space-evenly">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-evenly space-x-4 font-mono text-white text-sm font-bold
+          leading-6 bg-gray-500/40 rounded-lg">
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">01</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">02</div>
+        <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Justify Items
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how grid items are aligned along their inline axis.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-items">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-items-start" to justify grid items against the start of their inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-items#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 font-mono text-white text-sm font-bold leading-6">
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-start">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">01</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-start">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">02</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-start">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">03</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-start">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">04</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-start">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">05</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-start">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg">06</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-items-end" to justify grid items against the end of their inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-items#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 font-mono text-white text-sm font-bold leading-6">
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-end">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">01</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-end">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">02</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-end">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">03</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-end">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">04</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-end">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">05</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-end">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg">06</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-items-center" to justify grid items along their inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-items#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 font-mono text-white text-sm font-bold leading-6">
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-center">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">01</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-center">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">02</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-center">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">03</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-center">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">04</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-center">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">05</div>
+        </div>
+        <div class="bg-gray-500/40 grid rounded-lg justify-items-center">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg">06</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-items-stretch" to stretch items along their inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-items#stretch">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 justify-items-stretch font-mono text-white text-sm font-bold leading-6">
+        <div class="h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">01</div>
+        <div class="h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">02</div>
+        <div class="h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">03</div>
+        <div class="h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">04</div>
+        <div class="h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">05</div>
+        <div class="h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg">06</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Justify Self
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an individual grid item is aligned along its inline axis.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-self">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Auto
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-self-auto" to align an item based on the value of the grid’s "justify-items" property:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-self#auto">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="grid grid-cols-3 gap-4 justify-items-stretch auto-rows-fr font-mono text-white text-sm font-bold leading-6 text-center">
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">01</div>
+        <div class="justify-self-auto p-4 rounded-lg bg-purple-500 shadow-lg">02</div>
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">03</div>
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">04</div>
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">05</div>
+        <div class="p-4 rounded-lg bg-purple-300 dark:bg-purple-800 dark:text-purple-400">06</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-self-start" to align a grid item to the start its inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-self#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 justify-items-stretch auto-rows-fr font-mono text-white text-sm
+          font-bold leading-6 text-center">
+        <div class="p-4 rounded-lg bg-pink-300 dark:bg-pink-800 dark:text-pink-400">01</div>
+        <div class="bg-gray-500/40 rounded-lg">
+          <div class="justify-self-start p-4 w-14 h-14 rounded-lg bg-pink-500 shadow-lg">02</div>
+        </div>
+        <div class="p-4 rounded-lg bg-pink-300 dark:bg-pink-800 dark:text-pink-400">03</div>
+        <div class="p-4 rounded-lg bg-pink-300 dark:bg-pink-800 dark:text-pink-400">04</div>
+        <div class="p-4 rounded-lg bg-pink-300 dark:bg-pink-800 dark:text-pink-400">05</div>
+        <div class="p-4 rounded-lg bg-pink-300 dark:bg-pink-800 dark:text-pink-400">06</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-self-center" to align a grid item along the center its inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-self#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 justify-items-stretch auto-rows-fr font-mono text-white
+          text-sm font-bold leading-6 text-center">
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">01</div>
+        <div class="justify-self-center grid w-full bg-gray-500/40 rounded-lg">
+          <div class="justify-self-center p-4 w-14 h-14 rounded-lg bg-indigo-500 shadow-lg">02</div>
+        </div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">03</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">04</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">05</div>
+        <div class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400">06</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-self-end" to align a grid item to the end its inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-self#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 justify-items-stretch auto-rows-fr font-mono
+          text-white text-sm font-bold leading-6 text-center">
+        <div class="p-4 rounded-lg bg-blue-300 dark:bg-blue-800 dark:text-blue-500">01</div>
+        <div class="justify-self-end grid w-full bg-gray-500/40 rounded-lg">
+          <div class="justify-self-end p-4 w-14 h-14 rounded-lg bg-blue-500 shadow-lg">02</div>
+        </div>
+        <div class="p-4 rounded-lg bg-blue-300 dark:bg-blue-800 dark:text-blue-500">03</div>
+        <div class="p-4 rounded-lg bg-blue-300 dark:bg-blue-800 dark:text-blue-500">04</div>
+        <div class="p-4 rounded-lg bg-blue-300 dark:bg-blue-800 dark:text-blue-500">05</div>
+        <div class="p-4 rounded-lg bg-blue-300 dark:bg-blue-800 dark:text-blue-500">06</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "justify-self-stretch" to stretch a grid item to fill the grid area on its inline axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/justify-self#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="grid grid-cols-3 gap-4 justify-items-stretch auto-rows-fr font-mono text-white text-sm font-bold leading-6 text-center">
+        <div class="bg-gray-500/40 rounded-lg">
+          <div class="p-4 w-14 h-14 rounded-lg bg-fuchsia-300 dark:bg-fuchsia-800 dark:text-fuchsia-400">01</div>
+        </div>
+        <div class="justify-self-stretch grid w-full bg-gray-500/40 rounded-lg">
+          <div class="justify-self-stretch p-4 rounded-lg bg-fuchsia-500 shadow-lg">02</div>
+        </div>
+        <div class="bg-gray-500/40 rounded-lg">
+          <div class="p-4 w-14 h-14 rounded-lg bg-fuchsia-300 dark:bg-fuchsia-800 dark:text-fuchsia-400">03</div>
+        </div>
+        <div class="bg-gray-500/40 rounded-lg">
+          <div class="p-4 w-14 h-14 rounded-lg bg-fuchsia-300 dark:bg-fuchsia-800 dark:text-fuchsia-400">04</div>
+        </div>
+        <div class="bg-gray-500/40 rounded-lg">
+          <div class="p-4 w-14 h-14 rounded-lg bg-fuchsia-300 dark:bg-fuchsia-800 dark:text-fuchsia-400">05</div>
+        </div>
+        <div class="bg-gray-500/40 rounded-lg">
+          <div class="p-4 w-14 h-14 rounded-lg bg-fuchsia-300 dark:bg-fuchsia-800 dark:text-fuchsia-400">06</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Align Content
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how rows are positioned in multi-row flex and grid containers.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "content-start" to pack rows in a container against the start of the cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 content-start w-full rounded-lg bg-gray-500/40 text-center h-56">
+          <div class="p-4 shadow-lg rounded-lg bg-purple-500">01</div>
+          <div class="p-4 shadow-lg rounded-lg bg-purple-500">02</div>
+          <div class="p-4 shadow-lg rounded-lg bg-purple-500">03</div>
+          <div class="p-4 shadow-lg rounded-lg bg-purple-500">04</div>
+          <div class="p-4 shadow-lg rounded-lg bg-purple-500">05</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "content-center" to pack rows in a container in the center of the cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 content-center w-full rounded-lg bg-gray-500/40 text-center h-56">
+          <div class="p-4 shadow-lg rounded-lg bg-sky-500">01</div>
+          <div class="p-4 shadow-lg rounded-lg bg-sky-500">02</div>
+          <div class="p-4 shadow-lg rounded-lg bg-sky-500">03</div>
+          <div class="p-4 shadow-lg rounded-lg bg-sky-500">04</div>
+          <div class="p-4 shadow-lg rounded-lg bg-sky-500">05</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "content-end" to pack rows in a container against the end of the cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 content-end w-full rounded-lg bg-gray-500/40 text-center h-56">
+          <div class="p-4 shadow-lg rounded-lg bg-pink-500">01</div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-500">02</div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-500">03</div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-500">04</div>
+          <div class="p-4 shadow-lg rounded-lg bg-pink-500">05</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space between
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "content-between" to distribute rows in a container
+    such that there is an equal amount of space between each line:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content#space-between">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 content-between w-full rounded-lg bg-gray-500/40 text-center h-56">
+          <div class="p-4 shadow-lg rounded-lg bg-violet-500">01</div>
+          <div class="p-4 shadow-lg rounded-lg bg-violet-500">02</div>
+          <div class="p-4 shadow-lg rounded-lg bg-violet-500">03</div>
+          <div class="p-4 shadow-lg rounded-lg bg-violet-500">04</div>
+          <div class="p-4 shadow-lg rounded-lg bg-violet-500">05</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space around
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "content-around" to distribute rows in a container such that there is
+    an equal amount of space around each line:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content#space-around">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-x-4 content-around w-full rounded-lg bg-gray-500/40 text-center h-56">
+          <div class="p-4 shadow-lg rounded-lg bg-blue-500">01</div>
+          <div class="p-4 shadow-lg rounded-lg bg-blue-500">02</div>
+          <div class="p-4 shadow-lg rounded-lg bg-blue-500">03</div>
+          <div class="p-4 shadow-lg rounded-lg bg-blue-500">04</div>
+          <div class="p-4 shadow-lg rounded-lg bg-blue-500">05</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space evenly
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "content-evenly" to distribute rows in a container such that there is an equal amount of space around each item,
+    but also accounting for the doubling of space you would normally see between each item when using "content-around":
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-content#space-evenly">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-x-4 content-evenly w-full rounded-lg bg-gray-500/40 text-center h-56">
+          <div class="p-4 shadow-lg rounded-lg bg-indigo-500">01</div>
+          <div class="p-4 shadow-lg rounded-lg bg-indigo-500">02</div>
+          <div class="p-4 shadow-lg rounded-lg bg-indigo-500">03</div>
+          <div class="p-4 shadow-lg rounded-lg bg-indigo-500">04</div>
+          <div class="p-4 shadow-lg rounded-lg bg-indigo-500">05</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Align Items
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how flex and grid items are positioned along a container's cross axis.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-items">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "items-stretch" to stretch items to fill the container’s cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-items#stretch">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-stretch gap-4 w-full rounded-lg bg-gray-500/40 text-center">
+          <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">01</div>
+          <div class="py-12 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">02</div>
+          <div class="py-8 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">03</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "items-start" to align items to the start of the container’s cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-items#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-start gap-4 w-full rounded-lg bg-gray-500/40 text-center">
+          <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">01</div>
+          <div class="py-12 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">02</div>
+          <div class="py-8 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">03</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "items-center" to align items along the center of the container’s cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-items#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-center gap-4 w-full rounded-lg bg-gray-500/40 text-center">
+          <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">01</div>
+          <div class="py-12 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">02</div>
+          <div class="py-8 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">03</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use items-end to align items to the end of the container’s cross axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-items#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-end gap-4 w-full rounded-lg bg-gray-500/40 text-center">
+          <div class="py-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">01</div>
+          <div class="py-12 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">02</div>
+          <div class="py-8 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">03</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Baseline
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use items-baseline to align items along the container’s cross axis such that all of their baselines align:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-items#baseline">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-baseline gap-4 w-full rounded-lg bg-gray-500/40 text-center">
+          <div class="pt-2 pb-6 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">01</div>
+          <div class="pt-8 pb-12 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">02</div>
+          <div class="pt-12 pb-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">03</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Align Self
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-self">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Auto
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "self-auto" to align an item based on the value of the container’s align-items property:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-self#auto">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-stretch gap-4 w-full rounded-lg bg-gray-500/40 h-24">
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-sky-300
+              dark:bg-sky-800 dark:text-sky-500">
+            01
+          </div>
+          <div class="self-auto p-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">
+            02
+          </div>
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-sky-300
+              dark:bg-sky-800 dark:text-sky-500">
+            03
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "self-start" to align an item to the start of the container’s cross axis, despite the container’s "align-items"
+    value:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-self#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-stretch gap-4 w-full rounded-lg bg-gray-500/40 h-24">
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-pink-300
+              dark:bg-pink-800 dark:text-pink-400">
+            01
+          </div>
+          <div class="self-start p-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">
+            02
+          </div>
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-pink-300
+              dark:bg-pink-800 dark:text-pink-400">
+            03
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "self-center" to align an item along the center of the container’s cross axis, despite the container’s
+    "align-items" value:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-self#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-stretch gap-4 w-full rounded-lg bg-gray-500/40 h-24">
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-purple-300
+              dark:bg-purple-800 dark:text-purple-400">
+            01
+          </div>
+          <div class="self-center p-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-purple-500">
+            02
+          </div>
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-purple-300
+              dark:bg-purple-800 dark:text-purple-400">
+            03
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "self-end" to align an item to the end of the container’s cross axis, despite the container’s "align-items"
+    value:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-self#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-stretch gap-4 w-full rounded-lg bg-gray-500/40 h-24">
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-indigo-300
+              dark:bg-indigo-800 dark:text-indigo-400">
+            01
+          </div>
+          <div class="self-end p-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-indigo-500">
+            02
+          </div>
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-indigo-300
+              dark:bg-indigo-800 dark:text-indigo-400">
+            03
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "self-stretch" to stretch an item to fill the container’s cross axis, despite the container’s "align-items"
+    value:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/align-self#stretch">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="flex items-stretch gap-4 w-full rounded-lg bg-gray-500/40 h-24">
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-fuchsia-300
+              dark:bg-fuchsia-800 dark:text-fuchsia-400">
+            01
+          </div>
+          <div class="self-stretch p-4 flex-1 flex items-center justify-center shadow-lg rounded-lg bg-fuchsia-500">
+            02
+          </div>
+          <div class="p-4 flex-1 flex items-center justify-center rounded-lg bg-fuchsia-300
+              dark:bg-fuchsia-800 dark:text-fuchsia-400">
+            03
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Place Content
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how content is justified and aligned at the same time.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-center" to pack items in the center of the block axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-[repeat(2,56px)] place-content-center h-56 gap-4">
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">01</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">02</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">03</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-sky-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-start" to pack items against the start of the block axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-[repeat(2,56px)] place-content-start h-56 gap-4">
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-fuchsia-500">01</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-fuchsia-500">02</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-fuchsia-500">03</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-fuchsia-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-end" to pack items against the end of the block axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-[repeat(2,56px)] place-content-end h-56 gap-4">
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-indigo-500">01</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-indigo-500">02</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-indigo-500">03</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-indigo-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space between
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-between" to distribute grid items along the block axis so that that there is an equal amount of
+    space between each row on the block axis.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#space-between">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-[repeat(2,56px)] place-content-between h-56 gap-4">
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-purple-500">01</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-purple-500">02</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-purple-500">03</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-purple-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space around
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-around" distribute grid items such that there is an equal amount of space around each row on the
+    block axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#space-around">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-[repeat(2,56px)] place-content-around h-56 gap-x-4">
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">01</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">02</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">03</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Space evenly
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-evenly" to distribute grid items such that they are evenly spaced on the block axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#space-evenly">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-[repeat(2,56px)] place-content-evenly h-56">
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">01</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">02</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">03</div>
+          <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-content-stretch" to stretch grid items along their grid areas on the block axis:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-content#stretch">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6 bg-gray-500/40 rounded-lg">
+        <div class="grid grid-cols-2 place-content-stretch h-56 gap-4">
+          <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">01</div>
+          <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">02</div>
+          <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">03</div>
+          <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">04</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Place Items
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how items are justified and aligned at the same time.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-items">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-items-start" to place grid items on the start of their grid areas on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-items#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 h-56 gap-4">
+          <div class="bg-gray-500/40 grid place-items-start rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">01</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-start rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">02</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-start rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">03</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-start rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">04</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-start rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">05</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-start rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-cyan-500">06</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-items-end" to place grid items on the end of their grid areas on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-items#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 h-56 gap-4">
+          <div class="bg-gray-500/40 grid place-items-end rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">01</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-end rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">02</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-end rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">03</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-end rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">04</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-end rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">05</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-end rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-violet-500">06</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-items-center" to place grid items in the center of their grid areas on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-items#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 h-56 gap-4">
+          <div class="bg-gray-500/40 grid place-items-center rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">01</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-center rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">02</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-center rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">03</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-center rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">04</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-center rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">05</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-center rounded-lg">
+            <div class="p-4 w-14 h-14 flex items-center justify-center shadow-lg rounded-lg bg-pink-500">06</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-items-stretch" to stretch items along their grid areas on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-items#stretch">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="font-mono text-white text-sm font-bold leading-6">
+        <div class="grid grid-cols-3 gap-4 h-56 gap-4">
+          <div class="bg-gray-500/40 grid place-items-stretch rounded-lg">
+            <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">01</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-stretch rounded-lg">
+            <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">02</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-stretch rounded-lg">
+            <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">03</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-stretch rounded-lg">
+            <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">04</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-stretch rounded-lg">
+            <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">05</div>
+          </div>
+          <div class="bg-gray-500/40 grid place-items-stretch rounded-lg">
+            <div class="p-4 flex items-center justify-center shadow-lg rounded-lg bg-blue-500">06</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Place Self
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an individual item is justified and aligned at the same time.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-self">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Auto
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-self-auto" to align an item based on the value of the container’s place-items property:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-self#auto">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 place-iems-stretch font-mono text-white text-sm font-bold leading-6">
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-indigo-300
+            dark:bg-indigo-800 dark:text-indigo-400">
+          01
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg palce-self-auto">
+          02
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-indigo-300
+            dark:bg-indigo-800 dark:text-indigo-400">
+          03
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-indigo-300
+            dark:bg-indigo-800 dark:text-indigo-400">
+          04
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-indigo-300
+            dark:bg-indigo-800 dark:text-indigo-400">
+          05
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-indigo-300
+            dark:bg-indigo-800 dark:text-indigo-400">
+          06
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Start
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-self-start" to align an item to the start on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-self#start">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 place-iems-stretch font-mono text-white text-sm font-bold leading-6">
+        <div class="p-8 rounded-lg flex items-center justify-center bg-purple-300 dark:bg-purple-800
+             dark:text-purple-400">
+          01
+        </div>
+        <div class="bg-gray-500/40 rounded-lg grid">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg
+          place-self-start">
+            02
+          </div>
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-purple-300 dark:bg-purple-800
+            dark:text-purple-400">
+          03
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-purple-300 dark:bg-purple-800
+            dark:text-purple-400">
+          04
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-purple-300 dark:bg-purple-800
+            dark:text-purple-400">
+          05
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-purple-300 dark:bg-purple-800
+            dark:text-purple-400">
+          06
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Center
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-self-center" to align an item at the center on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-self#center">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 place-items-stretch font-mono text-white text-sm font-bold leading-6">
+        <div class="p-8 rounded-lg flex items-center justify-center bg-sky-300 dark:bg-sky-800 dark:text-sky-500">
+          01
+        </div>
+        <div class="bg-gray-500/40 rounded-lg grid">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg place-self-center">
+            02
+          </div>
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-sky-300 dark:bg-sky-800 dark:text-sky-500">
+          03
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-sky-300 dark:bg-sky-800 dark:text-sky-500">
+          04
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-sky-300 dark:bg-sky-800 dark:text-sky-500">
+          05
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-sky-300 dark:bg-sky-800 dark:text-sky-500">
+          06
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    End
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-self-end" to align an item to the end on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-self#end">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 place-iems-stretch font-mono text-white text-sm font-bold leading-6">
+        <div class="p-8 rounded-lg flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400">
+          01
+        </div>
+        <div class="bg-gray-500/40 rounded-lg grid">
+          <div class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg place-self-end">
+            02
+          </div>
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400">
+          03
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400">
+          04
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400">
+          05
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400">
+          06
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Stretch
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "place-self-stretch" to stretch an item on both axes:
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/place-self#stretch">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-3 gap-4 place-iems-stretch font-mono text-white text-sm font-bold leading-6">
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-fuchsia-300
+            dark:bg-fuchsia-800 dark:text-fuchsia-400">
+          01
+        </div>
+        <div class="p-8 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg place-self-stretch">
+          02
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-fuchsia-300
+            dark:bg-fuchsia-800 dark:text-fuchsia-400">
+          03
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-fuchsia-300
+            dark:bg-fuchsia-800 dark:text-fuchsia-400">
+          04
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-fuchsia-300
+            dark:bg-fuchsia-800 dark:text-fuchsia-400">
+          05
+        </div>
+        <div
+            class="p-8 rounded-lg flex items-center justify-center bg-fuchsia-300
+            dark:bg-fuchsia-800 dark:text-fuchsia-400">
+          06
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ======================================================================================= -->
+</div>
+
+</body>
+</html>

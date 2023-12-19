@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gradient</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Gradient Color Stops
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the color stops in background gradients.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gradient-color-stops">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Starting color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Set the starting color of a gradient using the "from-{color}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gradient-color-stops#starting-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="space-y-2 mx-5">
+        <div class="flex justify-between">
+          <div class="flex flex-col space-y-2 items-center -translate-x-5">
+            <div class="rounded-full h-10 w-10 bg-indigo-500 border-4 border-white shadow-lg"></div>
+            <div class="bg-slate-300 w-0.5 h-4"></div>
+          </div>
+        </div>
+        <div class="p-4 rounded-lg bg-gradient-to-r from-indigo-500">&nbsp;</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Ending color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Set the ending color of a gradient using the "to-{color}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gradient-color-stops#ending-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="space-y-2 mx-5">
+        <div class="flex justify-between">
+          <div class="flex flex-col space-y-2 items-center -translate-x-5">
+            <div class="rounded-full h-10 w-10 bg-cyan-500 border-4 border-white shadow-lg"></div>
+            <div class="bg-slate-300 w-0.5 h-4"></div>
+          </div>
+          <div class="flex flex-col space-y-2 items-center translate-x-5">
+            <div class="rounded-full h-10 w-10 bg-blue-500 border-4 border-white shadow-lg"></div>
+            <div class="bg-slate-300 w-0.5 h-4"></div>
+          </div>
+        </div>
+        <div class="p-4 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500">&nbsp;</div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Middle color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Add a middle color to a gradient using the "via-{color}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/gradient-color-stops#middle-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="space-y-2 mx-5">
+        <div class="flex justify-between">
+          <div class="flex flex-col space-y-2 items-center -translate-x-5">
+            <div class="rounded-full h-10 w-10 bg-indigo-500 border-4 border-white shadow-lg"></div>
+            <div class="bg-slate-300 w-0.5 h-4"></div>
+          </div>
+          <div class="flex flex-col space-y-2 items-center">
+            <div class="rounded-full h-10 w-10 bg-purple-500 border-4 border-white shadow-lg"></div>
+            <div class="bg-slate-300 w-0.5 h-4"></div>
+          </div>
+          <div class="flex flex-col space-y-2 items-center translate-x-5">
+            <div class="rounded-full h-10 w-10 bg-pink-500 border-4 border-white shadow-lg"></div>
+            <div class="bg-slate-300 w-0.5 h-4"></div>
+          </div>
+        </div>
+        <div class="p-4 rounded-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">&nbsp;</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

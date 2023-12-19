@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions & Animation</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Transition Property
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling which CSS properties transition.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-property">more</a>
+  </p>
+
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-[1200px] h-[800px] mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition-none
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: none;
+        </td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition-all
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: all; <br>
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); <br>
+          transition-duration: 150ms;
+        </td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, <br>
+          box-shadow, transform, filter, backdrop-filter; <br>
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-duration: 150ms;
+        </td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition-colors
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; <br>
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); <br>
+          transition-duration: 150ms;
+        </td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition-opacity
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: opacity; <br>
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); <br>
+          transition-duration: 150ms;
+        </td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition-shadow
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: box-shadow; <br>
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); <br>
+          transition-duration: 150ms;
+        </td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          transition-transform
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">
+          transition-property: transform; <br>
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); <br>
+          transition-duration: 150ms;
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling transitioned properties
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "transition-{properties}" utilities to specify which properties should transition when they change.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-property#controlling-transitioned-properties">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8 bg-white">
+      <div class="flex grid grid-cols-3 gap-20 justify-between text-white text-sm font-bold leading-6">
+        <button class="px-4 py-5  font-semibold text-sm bg-blue-500 text-white rounded-md shadow-xl shadow-yellow-900
+            hover:-translate-y-1 hover:scale-110 hover:bg-green-400 hover:text-gray-800 hover:shadow-pink-500
+            transition-transform ease-in-out duration-500">
+          Just Scale Up
+        </button>
+        <button class="px-4 py-5 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-xl shadow-yellow-900
+            hover:-translate-y-1 hover:scale-110 hover:bg-green-400 hover:text-gray-800 hover:shadow-pink-500
+            transition-colors ease-in-out duration-500">
+          Just Change Colors
+        </button>
+        <button class="px-4 py-5 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-xl shadow-yellow-900
+            hover:-translate-y-1 hover:bg-green-400 hover:text-gray-800 hover:shadow-pink-500
+            transition-transform duration-500 ease-in-out">
+          Just Move Up
+        </button>
+        <button class="px-4 py-5 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-xl shadow-yellow-900
+            opacity-100 hover:opacity-0 hover:bg-green-400 hover:text-gray-800 hover:shadow-pink-500
+            transition-opacity duration-1000 ease-in-out">
+          Just Vanish Slowly
+        </button>
+        <button class="px-4 py-5 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-xl shadow-yellow-900
+            hover:-translate-y-1 hover:scale-110 hover:bg-green-400 hover:text-gray-800 hover:shadow-pink-500
+            transition-shadow duration-1000 ease-in-out">
+          Just Shadow Color
+        </button>
+        <button class="px-4 py-5 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-xl shadow-yellow-900
+            hover:-translate-y-1 hover:scale-110 hover:bg-green-400 hover:text-gray-800 hover:shadow-pink-500
+            transition ease-in-out duration-500">
+          All together
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Transition Duration
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the duration of CSS transitions.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-duration">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing transition duration
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "duration-{amount}" utilities to control an element’s transition-duration.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-property#controlling-transitioned-properties">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white text-sm font-bold leading-6">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-75
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-75">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-100
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-100">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-150
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-150">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-200
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-200">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-300
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-300">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-500
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-500">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-700
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-700">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            duration-1000
+          </p>
+          <button
+              class="px-4 py-2 font-semibold text-sm bg-violet-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-1000">
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Transition Timing Function
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the easing of CSS transitions.
+    <br>
+    ease-in: slow at the beginning, fast/abrupt at the end <br>
+    ease-out: fast/abrupt at the beginning, slow at the end <br>
+    ease-in-out: slow at the beginning, fast/abrupt in the middle, slow at the end
+
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-timing-function">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling the easing curve
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "ease-{timing}" utilities to control an element’s easing curve.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-timing-function#controlling-the-easing-curve">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white
+        text-sm font-bold leading-6">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            ease-in
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-sky-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in duration-1000">
+            Button A
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            ease-out
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-sky-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-out duration-1000">
+            Button B
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            ease-in-out
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-sky-500 text-white rounded-md shadow-sm
+              hover:scale-150 ease-in-out duration-1000">
+            Button C
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Transition Delay
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the delay of CSS transitions.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-delay">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Delaying transitions
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "delay-{amount}" utilities to control an element’s transition-delay.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transition-delay#delaying-transitions">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row gap-8 sm:gap-0 justify-around text-white text-sm font-bold leading-6">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-75
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-75">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-100
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-100">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-150
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-150">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-200
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-200">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-300
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-300">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-500
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-500">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-700
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-700">
+            Button
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            delay-1000
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm
+            hover:scale-125 ease-in-out duration-300 delay-1000">
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Animation
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for animating elements with CSS animations.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/animation">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Spin
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Add the "animate-spin" utility to add a linear spin animation to elements like loading indicators.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/animation#spin">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex items-center justify-center">
+        <button type="button"
+                class="inline-flex items-center px-4 py-2 font-semibold
+                leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400
+                transition ease-in-out duration-150 cursor-not-allowed"
+                disabled="">
+          <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Processing...
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Ping
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Add the "animate-ping" utility to make an element scale and fade like a radar ping or ripple of water — useful for
+    things like notification badges.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/animation#ping">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex items-center justify-center">
+        <span class="relative inline-flex">
+          <button type="button"
+                  class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md
+                  text-sky-500 bg-white dark:bg-slate-800 ring-1 ring-slate-900/10
+                  transition ease-in-out duration-150 cursor-not-allowed dark:ring-slate-200/20"
+                  disabled="">
+            Transactions
+          </button>
+          <span class="flex absolute h-4 w-4 top-0 right-0 -mt-1 -mr-1">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-4 w-4 bg-sky-500"></span>
+          </span>
+        </span>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Pulse
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Add the "animate-pulse" utility to make an element gently fade in and out — useful for things like skeleton loaders.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/animation#pulse">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex items-center justify-center">
+        <div class="bg-white dark:bg-slate-800 p-4 ring-1 ring-slate-900/5 rounded-lg shadow-lg
+          max-w-xs w-full h-28">
+          <div class="flex space-x-4 animate-pulse">
+            <div class="rounded-full bg-slate-500 h-10 w-10"></div>
+            <div class="flex-1 space-y-6 py-1">
+              <div class="h-2 bg-slate-600 rounded"></div>
+              <div class="space-y-3">
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded col-span-2"></div>
+                  <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded col-span-1"></div>
+                </div>
+                <div class="h-2 bg-slate-200 dark:bg-slate-700 rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Bounce
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Add the "animate-bounce" utility to make an element bounce up and down —
+    useful for things like “scroll down” indicators.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/animation#bounce">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-center">
+        <button class="animate-bounce px-4 py-2 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          Button
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Other animations
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Hover over them to see
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex grid grid-cols-4 gap-20 justify-between">
+        <button class="hover:animate-fade-in-up px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          fade in up
+        </button>
+        <button class="hover:animate-fade-in-down px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          fade in down
+        </button>
+        <button class="hover:animate-fade-out-up px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          fade out up
+        </button>
+        <button class="hover:animate-fade-out-down px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          fade out down
+        </button>
+        <button class="hover:animate-wiggle px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          wiggle
+        </button>
+        <button class="hover:animate-spin px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          spin
+        </button>
+        <button class="hover:animate-ping px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          ping
+        </button>
+        <button class="hover:animate-bounce px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          bounce
+        </button>
+        <button class="hover:animate-pulse px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          pulse
+        </button>
+        <button class="hover:animate-heart-beat px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          heart-beat
+        </button>
+        <button class="hover:animate-h-flip px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          H Flip
+        </button>
+        <button class="hover:animate-v-flip px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          V Flip
+        </button>
+        <button class="hover:animate-swing px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          Swing
+        </button>
+        <button class="hover:animate-rubber-band px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          rubber band
+        </button>
+        <button class="hover:animate-flash px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          flash
+        </button>
+        <button class="hover:animate-head-shake px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          head shake
+        </button>
+        <button class="hover:animate-wobble px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          wobble
+        </button>
+        <button class="hover:animate-jello px-4 py-6 font-semibold leading-6 text-sm shadow
+            rounded-md text-white bg-indigo-500">
+          jello
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex grid grid-cols-4 gap-20 justify-around">
+
+        <!-- Wiggle animation -->
+        <div class="flex flex-col gap-4">
+          <span>wiggle</span>
+          <div class="h-16 w-16 animate-wiggle rounded-md bg-pink-400"></div>
+        </div>
+
+        <!-- heartBeat animation -->
+        <div class="flex flex-col gap-4">
+          <span>heart-beat</span>
+          <div class="h-16 w-16 animate-heart-beat rounded-md bg-blue-400"></div>
+        </div>
+
+        <!-- flipHorizontal animation -->
+        <div class="flex flex-col gap-4">
+          <span>Flip H(orizontal)</span>
+          <div class="h-16 w-16 animate-h-flip rounded-md bg-orange-400 text-center"><span>Flip H</span></div>
+        </div>
+
+        <!-- flipVertical animation -->
+        <div class="flex flex-col gap-4">
+          <span>flip V(ertical)</span>
+          <div class="h-16 w-16 animate-v-flip rounded-md bg-indigo-400 text-center"><span>Flip V</span></div>
+        </div>
+
+        <!-- Swing animation -->
+        <div class="flex flex-col gap-4">
+          <span>swing</span>
+          <span class="animate-swing text-3xl font-extrabold text-red-400">Swinging</span>
+        </div>
+
+        <!-- rubberBand animation -->
+        <div class="flex flex-col gap-4">
+          <span>rubber-band</span>
+          <span class="animate-rubber-band text-3xl font-extrabold text-violet-400">Stretching</span>
+        </div>
+
+        <!-- flash animation -->
+        <div class="flex flex-col gap-4">
+          <span>flash</span>
+          <span class="animate-flash text-3xl font-extrabold text-orange-800">Flashing</span>
+        </div>
+
+        <!-- headShake animation -->
+        <div class="flex flex-col gap-4">
+          <span>head-shake</span>
+          <span class="animate-head-shake text-3xl font-extrabold text-green-500">Shaking Heads</span>
+        </div>
+
+        <!-- jello animation -->
+        <div class="flex flex-col gap-4">
+          <span>jello</span>
+          <span class="animate-jello text-3xl font-extrabold text-purple-400">
+            lllllllllll
+          </span>
+        </div>
+
+        <!-- wobble animation -->
+        <div class="flex flex-col gap-4">
+          <span>wobble</span>
+          <span class="animate-wobble text-3xl font-extrabold text-blue-500">Wobbling</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

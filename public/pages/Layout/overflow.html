@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overflow</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Overflow
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an element handles content that is too large for the container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/overflow">more</a>
+  </p>
+
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-[500px] h-80 mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-auto
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow: auto;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-hidden
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow: hidden;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-clip
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow: clip;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-visible
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow: visible;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-scroll
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow: scroll;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-x-auto
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-x: auto;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-y-auto
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-y: auto;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-x-hidden
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-x: hidden;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-y-hidden
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-y: hidden;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-x-clip
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-x: clip;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-y-clip
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-y: clip;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-x-visible
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-x: visible;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-y-visible
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-y: visible;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-x-scroll
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400"> overflow-x: scroll;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          overflow-y-scroll
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">overflow-y: scroll;</td>
+      </tr>
+      <tr>
+      <tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Showing content that overflows
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use overflow-visible to prevent content within an element from being clipped. Note that any content that overflows
+    the bounds of the element will then be visible.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/overflow#showing-content-that-overflows">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5">
+        <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg"
+             src="/Tailwind/public/img/user2.png">
+        <div class="flex flex-col py-5 pl-24">
+          <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Andrew Alfred</strong>
+          <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Technical advisor</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Hiding content that overflows
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use overflow-hidden to clip any content within an element that overflows the bounds of that element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/overflow#hiding-content-that-overflows">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="overflow-hidden relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5">
+        <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg"
+             src="/Tailwind/public/img/user2.png">
+        <div class="flex flex-col py-5 pl-24">
+          <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Andrew Alfred</strong>
+          <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Technical advisor</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Scrolling if needed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use overflow-auto to add scrollbars to an element in the event that its content overflows the bounds of that
+    element. Unlike overflow-scroll, which always shows scrollbars, this utility will only show them if scrolling is
+    necessary.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/overflow#scrolling-if-needed">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="overflow-auto h-72 relative max-w-sm mx-auto bg-white dark:bg-slate-800 dark:highlight-white/5 shadow-lg ring-1 ring-black/5 rounded-xl flex flex-col divide-y dark:divide-slate-200/5">
+        <div class="flex items-center gap-4 p-4">
+          <img class="w-12 h-12 rounded-full"
+               src="/Tailwind/public/img/user2.png">
+          <div class="flex flex-col">
+            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Andrew Alfred</strong>
+            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Technical advisor</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-4">
+          <img class="w-12 h-12 rounded-full"
+               src="/Tailwind/public/img/user2.png">
+          <div class="flex flex-col">
+            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Debra Houston</strong>
+            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Analyst</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-4">
+          <img class="w-12 h-12 rounded-full"
+               src="/Tailwind/public/img/user2.png">
+          <div class="flex flex-col">
+            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Jane White</strong>
+            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Director, Marketing</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 p-4">
+          <img class="w-12 h-12 rounded-full"
+               src="/Tailwind/public/img/user2.png">
+          <div class="flex flex-col">
+            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Ray Flint</strong>
+            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Technical Advisor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Scrolling horizontally if needed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use overflow-x-auto to allow horizontal scrolling if needed.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/overflow#scrolling-horizontally-if-needed">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="max-w-md mx-auto bg-white shadow-xl min-w-0 dark:bg-slate-800 dark:highlight-white/5">
+        <div class="overflow-x-auto flex">
+          <div class="flex-none py-6 px-3 first:pl-6 last:pr-6">
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img class="w-18 h-18 rounded-full"
+                   src="/Tailwind/public/img/user2.png">
+              <strong class="text-slate-900 text-xs font-medium dark:text-slate-200">Andrew</strong>
+            </div>
+          </div>
+          <div class="flex-none py-6 px-3 first:pl-6 last:pr-6">
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img class="w-18 h-18 rounded-full"
+                   src="/Tailwind/public/img/user2.png">
+              <strong class="text-slate-900 text-xs font-medium dark:text-slate-200">Emily</strong>
+            </div>
+          </div>
+          <div class="flex-none py-6 px-3 first:pl-6 last:pr-6">
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img class="w-18 h-18 rounded-full"
+                   src="/Tailwind/public/img/user2.png">
+              <strong class="text-slate-900 text-xs font-medium dark:text-slate-200">Whitney</strong>
+            </div>
+          </div>
+          <div class="flex-none py-6 px-3 first:pl-6 last:pr-6">
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img class="w-18 h-18 rounded-full"
+                   src="/Tailwind/public/img/user2.png">
+              <strong class="text-slate-900 text-xs font-medium dark:text-slate-200">David</strong>
+            </div>
+          </div>
+          <div class="flex-none py-6 px-3 first:pl-6 last:pr-6">
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img class="w-18 h-18 rounded-full"
+                   src="/Tailwind/public/img/user2.png">
+              <strong class="text-slate-900 text-xs font-medium dark:text-slate-200">Kristin</strong>
+            </div>
+          </div>
+          <div class="flex-none py-6 px-3 first:pl-6 last:pr-6">
+            <div class="flex flex-col items-center justify-center gap-3">
+              <img class="w-18 h-18 rounded-full"
+                   src="/Tailwind/public/img/user2.png">
+              <strong class="text-slate-900 text-xs font-medium dark:text-slate-200">Sarah</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

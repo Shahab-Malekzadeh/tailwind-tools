@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transforms</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Scale
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for scaling elements with transform.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scale">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Scaling an element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "scale-{percentage}", "scale-x-{percentage}", and "scale-y-{percentage}" utilities to scale an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/scale#scaling-an-element">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1200px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold
+        p-8 px-12 sm:px-8 pb-10 shrink-0">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-x-50
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-x-50">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-y-50
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-y-50">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-50
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-50">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-75
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-75">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-100
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-100">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-125
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-125">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              scale-150
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 scale-150">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Rotate
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for rotating elements with transform.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/rotate">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Rotating an element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "rotate-{angle}" utilities to rotate an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/rotate#rotating-an-element">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1200px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold p-8 shrink-0">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-0
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-0">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-1
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-1">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-2
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-2">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-3
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-3">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-12
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-45
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-45">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-90
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-90">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              rotate-180
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 rotate-180">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Translate
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for translating elements with transform.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/translate">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Translating an element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "translate-x-{amount}" and "translate-y-{amount}" utilities to translate an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/translate#translating-an-element">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1200px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-4 font-mono font-bold p-8 pb-12 shrink-0">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              translate-y-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 translate-y-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -translate-y-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -translate-y-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              translate-x-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 translate-x-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Skew
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for skewing elements with transform.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/skew">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Skewing an element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "skew-x-{amount}" and "skew-y-{amount}" utilities to skew an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/skew#skewing-an-element">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1200px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex grid grid-cols-6 items-center justify-around sm:gap-4 font-mono font-bold p-8 shrink-0">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-y-0
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-y-0">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-y-1
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-y-1">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-y-2
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-y-2">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-y-3
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-y-3">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-y-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-y-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-y-12
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-y-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-y-0
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-y-0">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-y-1
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-y-1">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-y-2
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-y-2">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-y-3
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-y-3">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-y-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-y-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-y-12
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-y-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-x-0
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-x-0">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-x-1
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-x-1">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-x-2
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-x-2">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-x-3
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-x-3">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-x-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-x-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              skew-x-12
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 skew-x-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-x-0
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-x-0">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-x-1
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-x-1">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-x-2
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-x-2">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-x-3
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-x-3">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-x-6
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-x-6">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              -skew-x-12
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 -skew-x-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Transform Origin
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for specifying the origin for an element's transformations.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transform-origin">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing the transform origin
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Specify an element’s transform origin using the "origin-{keyword}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/transform-origin#changing-the-transform-origin">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1200px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold
+            p-8 px-12 sm:px-8 pb-10 shrink-0">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-center
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-center rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-top
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-top rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-top-right
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-top-right rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-right
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-right rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-bottom-right
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-bottom-right rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-bottom
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-bottom rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-bottom-left
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-bottom-left rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-left
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-left rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400">
+              origin-top-left
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img class="w-24 h-24 object-cover rounded-lg opacity-25"
+                     src="/Tailwind/public/img/mountain_square.png">
+              </div>
+              <div class="relative z-10 origin-top-left rotate-12">
+                <img class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                     src="/Tailwind/public/img/mountain_square.png">
+                <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactivity</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    On this page
+  </h1>
+
+  <ul class="list-disc list-inside text-gray-300 text-xl font-bold">
+    <li>Accent Color</li>
+    <li>Appearance</li>
+    <li>Cursor</li>
+    <li>Caret Color</li>
+    <li>Pointer Events</li>
+    <li>Resize</li>
+    <li>Touch Action</li>
+    <li>User Select</li>
+    <li>Will Change</li>
+  </ul>
+
+  <hr class="my-10 border-gray-500">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Accent Color
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the accented color of a form control.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/accent-color">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the accent color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "accent-{color}" utilities to change the accent color of an element.
+    This is helpful for styling elements like checkboxes and radio groups by overriding the browser’s default color.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/accent-color#setting-the-accent-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-wrap justify-center gap-6">
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" checked="">
+          <div class="text-slate-900 text-sm font-semibold dark:text-slate-200">
+            Browser default
+          </div>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="accent-pink-500" checked="">
+          <div class="text-slate-900 text-sm font-semibold dark:text-slate-200">
+            Customized
+          </div>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="accent-lime-500" checked="">
+          <div class="text-slate-900 text-sm font-semibold dark:text-slate-200">
+            Customized
+          </div>
+        </label>
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="accent-cyan-500" checked="">
+          <div class="text-slate-900 text-sm font-semibold dark:text-slate-200">
+            Customized
+          </div>
+        </label>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Appearance
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for suppressing native form control styling.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/appearance">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Removing default element appearance
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "appearance-none" to reset any browser specific styling on an element.
+    This utility is often used when creating custom form components.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/appearance#removing-default-element-appearance">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="max-w-sm mx-auto items-center">
+        <div class="flex my-6">
+          <select class="w-16">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+          </select>
+          <div class="mx-6 text-slate-900 text-sm font-semibold dark:text-slate-200">
+            Default browser styles applied
+          </div>
+        </div>
+        <div class="flex my-6 items-center">
+          <select class="appearance-none w-16">
+            <option>Yes</option>
+            <option>No</option>
+            <option>Maybe</option>
+          </select>
+          <div class="mx-6 text-slate-900 text-sm font-semibold dark:text-slate-200">
+            Default styles removed
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Cursor
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the cursor style when hovering over an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/cursor">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the cursor style
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the cursor-{style} to control which cursor is displayed when hovering over an element.
+    <br>
+    Hover over each button to see the cursor change
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/cursor#setting-the-cursor-style">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex grid grid-cols-6 sm:flex-row gap-x-5 gap-y-20 items-center justify-around">
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-auto"
+                type="button" tabindex="-1">
+          cursor-auto
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-default"
+                type="button" tabindex="-1">
+          cursor-default
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-pointer"
+                type="button" tabindex="-1">
+          cursor-pointer
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-wait"
+                type="button" tabindex="-1">
+          cursor-wait
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-text"
+                type="button" tabindex="-1">
+          cursor-text
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-move"
+                type="button" tabindex="-1">
+          cursor-move
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-help"
+                type="button" tabindex="-1">
+          cursor-help
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-not-allowed"
+                type="button" tabindex="-1">
+          cursor-not-allowed
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-none"
+                type="button" tabindex="-1">
+          cursor-none
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-context-menu"
+                type="button" tabindex="-1">
+          context-menu
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-progress"
+                type="button" tabindex="-1">
+          cursor-progress
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-cell"
+                type="button" tabindex="-1">
+          cursor-cell
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-crosshair"
+                type="button" tabindex="-1">
+          cursor-crosshair
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-vertical-text"
+                type="button" tabindex="-1">
+          cursor-vertical-text
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-alias"
+                type="button" tabindex="-1">
+          cursor-alias
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-copy"
+                type="button" tabindex="-1">
+          cursor-copy
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-no-drop"
+                type="button" tabindex="-1">
+          cursor-no-drop
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-grab"
+                type="button" tabindex="-1">
+          cursor-grab
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-grabbing"
+                type="button" tabindex="-1">
+          cursor-grabbing
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-all-scroll"
+                type="button" tabindex="-1">
+          cursor-all-scroll
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-col-resize"
+                type="button" tabindex="-1">
+          cursor-col-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-row-resize"
+                type="button" tabindex="-1">
+          cursor-row-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-n-resize"
+                type="button" tabindex="-1">
+          cursor-n-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-e-resize"
+                type="button" tabindex="-1">
+          cursor-e-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-s-resize"
+                type="button" tabindex="-1">
+          cursor-s-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-w-resize"
+                type="button" tabindex="-1">
+          cursor-w-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-ne-resize"
+                type="button" tabindex="-1">
+          cursor-ne-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-nw-resize"
+                type="button" tabindex="-1">
+          cursor-nw-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-se-resize"
+                type="button" tabindex="-1">
+          cursor-se-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-sw-resize"
+                type="button" tabindex="-1">
+          cursor-sw-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-ew-resize"
+                type="button" tabindex="-1">
+          cursor-ew-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-ns-resize"
+                type="button" tabindex="-1">
+          cursor-ns-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-nesw-resize"
+                type="button" tabindex="-1">
+          cursor-nesw-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-nwse-resize"
+                type="button" tabindex="-1">
+          cursor-nwse-resize
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-zoom-in"
+                type="button" tabindex="-1">
+          cursor-zoom-in
+        </button>
+        <button class="w-full sm:w-auto py-2 px-3 bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300
+                dark:disabled:bg-indigo-800 text-white dark:disabled:text-indigo-400
+                text-sm font-semibold rounded-md shadow focus:outline-none cursor-zoom-out"
+                type="button" tabindex="-1">
+          cursor-zoom-out
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Caret Color
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the color of the text input cursor.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/caret-color">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the caret color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "caret-{color}" utilities to change the color of the text input cursor.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/caret-color#setting-the-caret-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="w-full flex items-center justify-center">
+        <textarea
+            class="text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md focus:outline-none
+            focus:ring-2 focus:ring-pink-500 caret-pink-500 dark:bg-slate-800 dark:ring-0
+            dark:highlight-white/5 dark:focus:ring-2 dark:focus:ring-pink-500 dark:focus:bg-slate-900"
+            rows="2"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Pointer Events
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling whether an element responds to pointer events.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/pointer-events">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling pointer event behavior
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "pointer-events-auto" to revert to the default browser behavior for pointer events
+    (like ":hover" and "click").
+    <br>
+    Use "pointer-events-none" to make an element ignore pointer events.
+    <br>
+    The pointer events will still trigger on child elements and pass-through to elements
+    that are “beneath” the target.
+    <br>
+    Try clicking the search icons to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/pointer-events#controlling-pointer-event-behavior">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 px-0 sm:px-10 font-mono font-bold">
+        <div class="flex flex-col">
+          <p class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">pointer-events-auto</p>
+          <div class="relative rounded-lg shadow-sm w-full">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-auto">
+              <svg class="absolute text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <input type="text" placeholder="Search"
+                   class="font-sans block text-sm w-full pl-10 py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-lg dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400">
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400">pointer-events-none</p>
+          <div class="relative rounded-lg shadow-sm w-full">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <svg class="absolute text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <input type="text" placeholder="Search"
+                   class="font-sans block text-sm w-full pl-10 py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-lg dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Resize
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an element can be resized.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/resize">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Resizing in all directions
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use resize to make an element horizontally and vertically resizable.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/resize#resizing-in-all-directions">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="w-full flex items-center justify-center">
+        <textarea class="resize text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md
+        dark:bg-slate-800 dark:ring-0 dark:highlight-white/5" rows="3"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Resizing vertically
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "resize-y" to make an element vertically resizable.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/resize#resizing-vertically">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="w-full flex items-center justify-center">
+        <textarea class="resize-y text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md
+        dark:bg-slate-800 dark:ring-0 dark:highlight-white/5" rows="3"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Resizing horizontally
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "resize-x" to make an element horizontally resizable.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/resize#resizing-horizontally">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="w-full flex items-center justify-center">
+        <textarea class="resize-x text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md
+        dark:bg-slate-800 dark:ring-0 dark:highlight-white/5" rows="3" spellcheck="false"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Preventing resizing
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "resize-none" to prevent an element from being resizable.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/resize#preventing-resizing">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="w-full flex items-center justify-center">
+        <textarea class="resize-none text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md
+        dark:bg-slate-800 dark:ring-0 dark:highlight-white/5" rows="3"></textarea>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Touch Action
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an element can be scrolled and zoomed on touchscreens.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/touch-action">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the touch action
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "touch-{action}" utilities to control how an element can be scrolled (panned) and zoomed
+    (pinched) on touchscreens.
+    <br>
+    Try panning these images on a touchscreen
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/touch-action#setting-the-touch-action">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="grid sm:grid-cols-2 gap-x-6 gap-y-14 font-mono font-bold">
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            touch-auto
+          </p>
+          <div class="grid w-full h-48 overflow-auto touch-auto rounded-lg shadow-lg">
+            <img class="col-span-1 col-start-1 col-end-1 w-[150%] max-w-none"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            touch-none
+          </p>
+          <div class="w-full h-48 overflow-auto touch-none rounded-lg shadow-lg">
+            <img class="w-[150%] max-w-none"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            touch-pan-x
+          </p>
+          <div class="w-full h-48 overflow-auto touch-pan-x rounded-lg shadow-lg">
+            <img class="w-[150%] max-w-none"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            touch-pan-y
+          </p>
+          <div class="w-full h-48 overflow-auto touch-pan-y rounded-lg shadow-lg">
+            <img class="w-[150%] max-w-none"
+                 src="/Tailwind/public/img/mountain_square.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    User Select
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling whether the user can select text in an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/user-select">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Disabling text selection
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "select-none" to prevent selecting text in an element and its children.
+    <br>
+    Try selecting the text to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/user-select#disabling-text-selection">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-center">
+        <div class="select-none inline-flex text-center bg-white text-slate-900 font-semibold
+            font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3
+            dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200">
+          The quick brown fox jumps over the lazy dog.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Allowing text selection
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use select-text to allow selecting text in an element and its children.
+    <br>
+    Try selecting the text to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/user-select#allowing-text-selection">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-center">
+        <div class="select-text inline-flex text-center bg-white text-slate-900 font-semibold
+            font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3
+            dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200">
+          The quick brown fox jumps over the lazy dog.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Selecting all text in one click
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "select-all" to automatically select all the text in an element when a user clicks.
+    <br>
+    Try selecting the text to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/user-select#selecting-all-text-in-one-click">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-center">
+        <div class="select-all inline-flex text-center bg-white text-slate-900 font-semibold
+            font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3
+            dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200">
+          The quick brown fox jumps over the lazy dog.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Using auto select behaviour
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "select-auto" to use the default browser behavior for selecting text.
+    Useful for undoing other classes like ".select-none" at different breakpoints.
+    <br>
+    Try selecting the text to see the expected behaviour
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/user-select#selecting-all-text-in-one-click">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex justify-center">
+        <div class="select-auto inline-flex text-center bg-white text-slate-900 font-semibold
+            font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3
+            dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200">
+          The quick brown fox jumps over the lazy dog.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Will Change
+  </h1>
+
+  <p class="text-2xl text-gray-400">
+    Utilities for optimizing upcoming animations of elements that are expected to change.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/will-change">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Optimizing with will change
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use will-change-scroll, will-change-contents and will-change-transform to optimize an element
+    that’s expected to change in the near future by instructing the browser to prepare the
+    necessary animation before it actually begins.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/will-change#optimizing-with-will-change">more</a>
+  </p>
+
+  <pre class="box-border text-gray-300 border border-gray-500 shadow-lg rounded-2xl my-10
+  overflow-x-auto lg:w-[1000px] mx-auto p-1">
+<code class="block whitespace-pre">
+  &lt;div class="overflow-auto will-change-scroll">
+  &lt!-- ... -->
+  &lt;/div>
+</code>
+</pre>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

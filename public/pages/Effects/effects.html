@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Effects</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Box Shadow
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the box shadow of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding an outer shadow
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "shadow-sm", "shadow", "shadow-md", "shadow-lg", "shadow-xl", or "shadow-2xl" utilities to apply different
+    sized outer box shadows to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow#adding-an-outer-shadow">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto bg-white">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-12 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-sm</p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-sm"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow</p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-md</p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-md"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-lg</p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-lg"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-xl</p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-xl"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-2xl</p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-2xl"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding an inner shadow
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "shadow-inner" utility to apply a subtle inset box shadow to an element.
+    This can be useful for things like form controls or wells.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow#adding-an-inner-shadow">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8 bg-white">
+      <div class="flex items-center justify-around gap-4 font-mono font-bold">
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-inner</p>
+          <div class="w-24 h-24 rounded-lg bg-white shadow-inner ring-1 ring-black/5"></div>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">
+            shadow-[inset_2px_4px_6px_8px_rgba(0,0,0,0.3)]
+          </p>
+          <div class="w-24 h-24 rounded-lg bg-white shadow-inner
+          shadow-[inset_2px_4px_6px_8px_rgba(0,0,0,0.3)]
+          ring-1 ring-black/5"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Removing the shadow
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "shadow-none" to remove an existing box shadow from an element.
+    This is most commonly used to remove a shadow that was applied at a smaller breakpoint.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow#removing-the-shadow">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8 bg-gray-50">
+      <div class="flex items-center justify-around gap-4 font-mono font-bold">
+        <div class="flex flex-col items-center">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3">shadow-none</p>
+          <div class="w-24 h-24 rounded-lg bg-white shadow-none"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Box Shadow Color
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the color of a box shadow.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow-color">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the box shadow color
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "shadow-{color}" utilities to change the color of an existing box shadow.
+    By default colored shadows have an opacity of 100%, but you can adjust this using the opacity modifier.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow-color#setting-the-box-shadow-color">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8 bg-gray-50">
+      <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            shadow-cyan-500/50
+          </p>
+          <button class="py-2 px-3 bg-cyan-500 text-white text-sm font-semibold rounded-md
+            shadow-lg shadow-cyan-500/90 focus:outline-none">Subscribe
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            shadow-blue-500/50
+          </p>
+          <button class="py-2 px-3 bg-blue-500 text-white text-sm font-semibold rounded-md
+            shadow-lg shadow-blue-500/90 focus:outline-none">Subscribe
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            shadow-indigo-500/50
+          </p>
+          <button class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md
+            shadow-lg shadow-indigo-500/90 focus:outline-none">Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Using shadows on colored backgrounds
+  </h2>
+  <p class="text-2xl text-gray-400">
+    When using shadows on a colored background, colored shadows can often look more natural
+    than the default black-based shadows, which tend to appear gray and washed-out.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/box-shadow-color#using-shadows-on-colored-backgrounds">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-around bg-indigo-300 px-8 pt-10 pb-12 space-x-6">
+        <div class="flex flex-col items-center">
+          <p class="mb-3 text-sm font-medium text-indigo-900">Default shadow</p>
+          <button class="py-2 px-3 bg-white text-indigo-600 text-sm font-semibold
+              rounded-md shadow-lg focus:outline-none">
+            Subscribe
+          </button>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="mb-3 text-sm font-medium text-indigo-900">Colored shadow</p>
+          <button class="py-2 px-3 bg-white text-indigo-600 text-sm font-semibold
+              rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Opacity
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the opacity of an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/opacity">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing an element's opacity
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Control the opacity of an element using the "opacity-{amount}" utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/opacity#changing-an-element-s-opacity">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-8
+          sm:gap-16 text-white text-sm font-bold leading-6">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            opacity-100
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-indigo-500 text-white rounded-md shadow-sm opacity-100">
+            Button A
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            opacity-75
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-indigo-500 text-white rounded-md shadow-sm opacity-75">
+            Button B
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            opacity-50
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-indigo-500 text-white rounded-md shadow-sm opacity-50">
+            Button C
+          </button>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            opacity-25
+          </p>
+          <button class="px-4 py-2 font-semibold text-sm bg-indigo-500 text-white rounded-md shadow-sm opacity-25">
+            Button D
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Mix Blend Mode
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an element should blend with the background.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/mix-blend-mode">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting an element's blend mode
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "mix-blend-{mode}" utilities to control how an element’s content should be blended with the background.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/mix-blend-mode#setting-an-element-s-blend-mode">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8 bg-gray-50">
+      <div class="flex justify-center -space-x-14">
+        <div class="w-32 h-32 mix-blend-multiply bg-blue-400 rounded-full"></div>
+        <div class="w-32 h-32 mix-blend-multiply bg-pink-400 rounded-full"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Attachment
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how a background image behaves when scrolling.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-attachment">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Fixed
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-fixed" to fix the background image relative to the viewport.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-attachment#fixed">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4">
+        <div class="max-w-lg mx-auto h-80 overflow-y-scroll scrollbar:!w-1.5 scrollbar:!h-1.5
+            scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300
+            bg-cover bg-center shadow-lg bg-[url(/Tailwind/public/img/mountain1.png)]">
+          <div class="mt-40">
+            <div class="bg-white p-4 sm:p-8">
+              <div class="font-inter font-extrabold text-2xl text-black tracking-tight">My trip to the summit</div>
+              <div class="mt-1 font-medium text-sm text-slate-500">November 16, 2021 · 4 min read</div>
+              <p class="mt-4 leading-7 text-slate-500">Maybe we can live without libraries, people like you and me.
+                Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book,
+                right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in
+                the Hat and the Five Chinese Brothers? Doesn't HE deserve better?</p>
+              <p class="mt-4 leading-7 text-slate-500">Look. If you think this is about overdue fines and missing books,
+                you'd better think again. This is about that kid's right to read a book without getting his mind warped!
+                Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time
+                buddies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Local
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-local" to scroll the background image with the container and the viewport.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-attachment#local">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4">
+        <div class="max-w-lg mx-auto bg-white shadow-lg">
+          <div class="py-8 sm:py-12">
+            <div class="h-64 overflow-y-scroll scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar-track:!bg-slate-100
+                 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 bg-cover bg-center bg-local
+                 bg-[url(/Tailwind/public/img/mountain1.png)]">
+              <div class="p-6 sm:px-16 sm:py-12 bg-black/40">
+                <p class="font-serif italic text-base sm:text-2xl text-white text-center leading-6 sm:leading-8">
+                  "Because the mail never stops. It just keeps coming and coming and coming, there's never a let-up.
+                  It's relentless. Every day it piles up more and more and more. And you gotta get it out but the more
+                  you get it out the more it keeps coming in. And then the barcode reader breaks and it's Publisher's
+                  Clearing House day."</p>
+                <div class="mt-6 font-inter font-bold text-sm sm:text-base text-white text-center">— Newman</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Scroll
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-scroll" to scroll the background image with the viewport, but not with the container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-attachment#local">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="px-4">
+        <div class="max-w-lg mx-auto bg-white shadow-lg">
+          <div class="py-8 sm:py-12">
+            <div class="h-64 overflow-y-scroll scrollbar:!w-1.5 scrollbar:!h-1.5scrollbar-track:!bg-slate-100
+              scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 bg-cover bg-scroll
+              bg-[url(/Tailwind/public/img/mountain1.png)]">
+              <div class="p-6 sm:px-16 sm:py-12 bg-black/40">
+                <p class="font-serif italic text-base sm:text-2xl text-white text-center leading-6 sm:leading-8">
+                  "Because the mail never stops. It just keeps coming and coming and coming, there's never a let-up.
+                  It's relentless. Every day it piles up more and more and more. And you gotta get it out but the more
+                  you get it out the more it keeps coming in. And then the barcode reader breaks and it's Publisher's
+                  Clearing House day."</p>
+                <div class="mt-6 font-inter font-bold text-sm sm:text-base text-white text-center">— Newman</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Clip
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the bounding box of an element's background.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-clip">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the background clip
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "bg-clip-{keyword}" utilities to control the bounding box of an element’s background.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-clip#setting-the-background-clip">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex flex-col sm:flex-row items-center justify-center space-y-10 sm:space-y-0 sm:space-x-10">
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            bg-clip-border
+          </p>
+          <div
+              class="w-24 h-24 bg-clip-border p-3 rounded-lg shadow-lg bg-indigo-500 border-4
+              border-white/50 border-dashed font-mono font-extrabold text-sm text-white flex
+              justify-center items-center"></div>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            bg-clip-padding
+          </p>
+          <div
+              class="w-24 h-24 bg-clip-padding p-3 rounded-lg shadow-lg bg-indigo-500 border-4
+              border-indigo-500/50 border-dashed font-mono font-extrabold text-sm text-white flex
+              justify-center items-center"></div>
+        </div>
+        <div class="flex flex-col items-center shrink-0">
+          <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+            bg-clip-content
+          </p>
+          <div
+              class="w-24 h-24 bg-clip-content p-3 rounded-lg bg-indigo-500 border-4
+              border-indigo-500/50 border-dashed font-mono font-extrabold text-sm text-white flex
+              justify-center items-center"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Cropping to text
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-clip-text" to crop an element’s background to match the shape of the text.
+    Useful for effects where you want a background image to be visible through the text.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-clip#setting-the-background-clip">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="text-4xl sm:text-5xl font-extrabold leading-none tracking-tight text-center">
+    <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+      Hello world
+    </span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Origin
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how an element's background is positioned relative to borders, padding, and content.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-origin">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the background origin
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-origin-border", "bg-origin-padding", and "bg-origin-content" to control where an element’s background is
+    rendered.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-origin#setting-the-background-origin">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              bg-origin-border</p>
+            <div
+                class="bg-origin-border bg-cover p-3 border-4 border-white/75 dark:border-white/40
+                border-dashed bg-slate-300 bg-no-repeat w-24 h-24 object-cover rounded-lg shadow-xl
+                bg-[url(/Tailwind/public/img/mountain1.png)]"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              bg-origin-padding</p>
+            <div
+                class="bg-origin-padding bg-cover p-3 border-4 border-white/75 dark:border-white/25 border-dashed
+                bg-slate-300 dark:bg-slate-700 bg-no-repeat w-24 h-24 object-cover rounded-lg shadow-xl
+                bg-[url(/Tailwind/public/img/mountain1.png)]"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              bg-origin-content</p>
+            <div
+                class="bg-origin-content bg-cover p-3 border-4 border-white/75 dark:border-white/25 border-dashed
+                bg-slate-300 dark:bg-slate-700 bg-no-repeat w-24 h-24 object-cover rounded-lg  shadow-xl
+                bg-[url(/Tailwind/public/img/mountain1.png)]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Position
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the position of an element's background image.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-position">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Setting the background position
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "bg-{side}" utilities to control the position of an element’s background image.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-position#setting-the-background-position">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="w-full">
+        <div class="overflow-x-scroll overflow-y-hidden snap-x scroll-p-4 flex sm:grid sm:grid-cols-3
+    sm:gap-16 p-8 items-end pt-16">
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-left-top</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-left-top ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute top-0 left-0 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-top</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-top ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute top-0 -left-6 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-right-top</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-right-top ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute top-0 right-0 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-left</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-left ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute -top-6 left-0 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-center</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-center ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute -top-6 -left-6 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-right</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-right ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute -top-6 right-0 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-left-bottom</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div
+                  class="relative z-10 w-full h-full rounded-md bg-left-bottom ring-1 ring-black/10 ring-inset shadow-lg"
+                  style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute -top-12 left-0 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-32 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-bottom</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-bottom ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute -top-12 -left-6 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-48 -mx-8 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500
+        font-mono text-center mb-3 dark:text-slate-400">bg-right-bottom</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div
+                  class="relative z-10 w-full h-full rounded-md bg-right-bottom ring-1 ring-black/10 ring-inset shadow-lg"
+                  style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img class="absolute -top-12 right-0 rounded-md overflow-hidden w-32 h-32 opacity-0
+          sm:group-hover:opacity-25 max-w-none"
+                   src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Repeat
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the repetition of an element's background image.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-repeat">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Repeat
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-repeat" to repeat the background image both vertically and horizontally.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-repeat#repeat">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="w-full mx-auto max-w-xl bg-white dark:bg-slate-800 dark:ring-1 dark:ring-slate-200/20
+            h-80 bg-repeat bg-center shadow-xl rounded-lg bg-[url(/Tailwind/public/img/glamorous.svg)]">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    No Repeat
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-no-repeat" when you don’t want to repeat the background image.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-repeat#no-repeat">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="w-full mx-auto max-w-xl bg-white dark:bg-slate-800 dark:ring-1 dark:ring-slate-200/20
+          h-64 bg-no-repeat bg-center shadow-xl rounded-lg bg-[url(/Tailwind/public/img/glamorous.svg)]">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Repeat Horizontally
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-repeat-x" to repeat the background image only horizontally.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-repeat#repeat-horizontally">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="w-full mx-auto max-w-xl bg-white dark:bg-slate-800 dark:ring-1 dark:ring-slate-200/20
+          h-64 bg-repeat-x bg-center shadow-xl rounded-lg bg-[url(/Tailwind/public/img/glamorous.svg)]">
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Repeat Vertically
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-repeat-y" to repeat the background image only vertically.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-repeat#repeat-vertically">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="w-full mx-auto max-w-xl bg-white dark:bg-slate-800 dark:ring-1 dark:ring-slate-200/20
+          h-64 bg-repeat-y bg-center shadow-xl rounded-lg bg-[url(/Tailwind/public/img/glamorous.svg)]">
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Size
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the background size of an element's background image.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-size">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Auto
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-auto" to display the background image at its default size.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-size#auto">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="relative flex items-center justify-center h-48 rounded-lg w-56 sm:w-96 mx-auto overflow-hidden">
+        <div class="absolute inset-0 opacity-50 bg-gray-500/40"></div>
+        <div class="relative z-10 w-full h-full bg-auto bg-no-repeat bg-center
+    bg-[url(/Tailwind/public/img/mountain_mini.png)]">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Cover
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-cover" to scale the background image until it fills the background layer.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-size#cover">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="relative flex items-center justify-center rounded-lg overflow-hidden w-56 sm:w-96 mx-auto">
+        <div class="absolute inset-0 opacity-50 bg-gray-500/40"></div>
+        <div class="relative z-10 w-full h-48 bg-cover bg-no-repeat bg-center
+          bg-[url(/Tailwind/public/img/mountain_mini.png)]">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Contain
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use "bg-contain" to scale the background image to the outer edges without cropping or stretching.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-size#contain">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="relative flex items-center justify-center rounded-lg overflow-hidden w-56 sm:w-96 mx-auto">
+        <div class="absolute inset-0 opacity-50 bg-gray-500/40"></div>
+        <div class="relative z-10 w-full h-48 bg-contain bg-no-repeat bg-center sm:bg-top
+          bg-[url(/Tailwind/public/img/mountain_mini.png)]">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Background Image
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling an element's background image.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-image">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Linear gradients
+  </h2>
+  <p class="text-2xl text-gray-400">
+    To give an element a linear gradient background, use one of the "bg-gradient-{direction} "utilities,
+    in combination with the gradient color stop utilities.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/background-image#linear-gradients">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="space-y-4">
+        <div class="h-14 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+        <div class="h-14 rounded-lg bg-gradient-to-r from-sky-500 to-indigo-500"></div>
+        <div class="h-14 rounded-lg bg-gradient-to-r from-violet-500 to-fuchsia-500"></div>
+        <div class="h-14 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500"></div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

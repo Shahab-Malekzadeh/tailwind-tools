@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Backdrop filters</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Blur
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop blur filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-blur">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Blurring behind an element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-blur-{amount?}" utilities to control an element’s backdrop blur.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-blur#blurring-behind-an-element">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-blur-sm</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-blur-sm h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-blur-md</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-blur-md h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-blur-xl</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-blur-xl h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Brightness
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop brightness filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-brightness">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling backdrop brightness
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-brightness-{amount?}" utilities to control an element’s backdrop brightness.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-brightness#controlling-backdrop-brightness">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-brightness-50
+            </p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-brightness-50 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-brightness-125
+            </p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-brightness-125 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-brightness-200
+            </p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-brightness-200 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Contrast
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop contrast filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-contrast">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling backdrop contrast
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-contrast-{amount?}" utilities to control an element’s backdrop contrast.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-contrast#controlling-backdrop-contrast">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-contrast-50</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-contrast-50 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-contrast-125</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-contrast-125 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-contrast-200</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-contrast-200 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Grayscale
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop grayscale filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-grayscale">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Making an element grayscale
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-grayscale" and "backdrop-grayscale-0" utilities to control whether an element’s
+    backdrop should be rendered as grayscale or in full color.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-grayscale#making-an-element-grayscale">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-grayscale-0</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-grayscale-0 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-grayscale</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-grayscale h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Hue Rotate
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop hue-rotate filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-hue-rotate">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Rotating the backdrop's hue
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-hue-rotate-{amount}" utilities to rotate the hue of an element’s backdrop.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-hue-rotate#rotating-the-backdrop-s-hue">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-hue-rotate-90</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-hue-rotate-90 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-hue-rotate-180</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-hue-rotate-180 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              -backdrop-hue-rotate-60</p>
+            <div class="relative">
+              <div class="absolute inset-6 -backdrop-hue-rotate-60 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Invert
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop invert filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-invert">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Inverting an element's backdrop
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-invert" and "backdrop-invert-0" utilities to control whether an element
+    should be rendered with inverted backdrop colors or normally.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-invert#inverting-an-element-s-backdrop">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-invert-0</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-invert-0 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-invert</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-invert h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Opacity
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop opacity filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-opacity">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Controlling opacity of backdrop filters
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-opacity-{amount}" utilities to control the opacity of other
+    backdrop filters applied to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-opacity#controlling-opacity-of-backdrop-filters">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-opacity-10</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-opacity-10 backdrop-invert h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-opacity-60</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-opacity-60 backdrop-invert h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-opacity-95</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-opacity-95 backdrop-invert h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Saturate
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop saturation filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-saturate">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Changing backdrop saturation
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "saturate-{amount}" utilities to control an element’s backdrop saturation.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-saturate#changing-backdrop-saturation">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-saturate-50</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-saturate-50 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-saturate-125</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-saturate-125 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-saturate-200</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-saturate-200 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Backdrop Sepia
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for applying backdrop sepia filters to an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-sepia">more</a>
+  </p>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Adding backdrop sepia filters
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the "backdrop-sepia" and backdrop-sepia-0 utilities to control whether an element’s
+    backdrop should be rendered as sepia or in full color.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/backdrop-sepia#adding-backdrop-sepia-filters">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex justify-start sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex items-center justify-around gap-6 sm:gap-4 font-mono font-bold shrink-0 p-8">
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-sepia-0</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-sepia-0 h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              backdrop-sepia</p>
+            <div class="relative">
+              <div class="absolute inset-6 backdrop-sepia h-20 w-20 bg-white/30"></div>
+              <img class="w-32 h-32 object-cover rounded-lg shadow-xl"
+                   src="/Tailwind/public/img/mountain_square.png">
+              <div class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

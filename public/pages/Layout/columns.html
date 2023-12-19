@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Columns</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Columns
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the number of columns within an element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/columns">more</a>
+  </p>
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-[500px] h-80 mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-1
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 1;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-2
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 2;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-3
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 3;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-4
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 4;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-5
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 5;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-6
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 6;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-7
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 7;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-8
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 8;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-9
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 9;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-10
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 10;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-11
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 11;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-12
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 12;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-auto
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: auto;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-3xs
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 16rem; /* 256px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-2xs
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 18rem; /* 288px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-xs
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 20rem; /* 320px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-sm
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 24rem; /* 384px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-md
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 28rem; /* 448px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-lg
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 32rem; /* 512px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 36rem; /* 576px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-2xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 42rem; /* 672px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-3xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 48rem; /* 768px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-4xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 56rem; /* 896px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-5xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 64rem; /* 1024px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-6xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 72rem; /* 1152px */</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          columns-7xl
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">columns: 80rem; /* 1280px */</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="columns-4">
+      <p>
+        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form
+        of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
+        before
+        final copy is available.
+      </p>
+      <br>
+      <p>
+        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form
+        of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
+        before
+        final copy is available.
+      </p>
+      <br>
+      <p>
+        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form
+        of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder
+        before
+        final copy is available.
+      </p>
+    </div>
+
+  </div>
+
+  <pre class="box-border text-gray-300 border border-gray-500 shadow-lg rounded-2xl
+  overflow-x-auto lg:w-[1000px] mx-auto p-1">
+<code class="block whitespace-pre">
+  &lt;div class="columns-4 ...">
+    &lt;p>...&lt;/p>
+    &lt;br>
+    &lt;p>...&lt;/p>
+    &lt;br>
+    &lt;p>...&lt;/p>
+  &lt;/div>
+</code>
+</pre>
+
+
+</div>
+
+</body>
+</html>

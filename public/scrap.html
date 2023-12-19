@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<script>
+	var children = $0.children;
+	var listtt = []
+	for (var i = 0; i < children.length; i++) {
+		var child = children[i];
+		listtt.push(child.firstChild.innerText);
+	}
+	console.log(listtt.join(" "))
+</script>
+</body>
+</html>

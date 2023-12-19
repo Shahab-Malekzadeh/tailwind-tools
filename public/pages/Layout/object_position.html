@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object Position</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Object Position
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling how a replaced element's content should be positioned within its container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-position">more</a>
+  </p>
+
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-[500px] h-80 mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-bottom
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: bottom;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-center
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: center;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-left
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: left;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-left-bottom
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: left bottom;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-left-top
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: left top;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-right
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: right;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-right-bottom
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: right bottom;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-right-top
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: right top;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          object-top
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">object-position: top;</td>
+      </tr>
+      <tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Positioning a replaced element
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the object-{side} utilities to specify how a replaced element’s content should be positioned within its
+    container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/object-fit#resizing-to-cover-a-container">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="w-full">
+        <div
+            class="overflow-x-scroll overflow-y-hidden snap-x scroll-p-4 flex sm:grid sm:grid-cols-3 sm:gap-16 p-8 items-end pt-16">
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-left-top</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-left-top ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute top-0 left-0 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-top</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-top ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute top-0 -left-6 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-right-top</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-right-top ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute top-0 right-0 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-left</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-left ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute -top-6 left-0 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-center</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-center ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute -top-6 -left-6 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-right</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-right ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute -top-6 right-0 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-left-bottom</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div
+                  class="relative z-10 w-full h-full rounded-md bg-left-bottom ring-1 ring-black/10 ring-inset shadow-lg"
+                  style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute -top-12 left-0 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-40 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-bottom</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div class="relative z-10 w-full h-full rounded-md bg-bottom ring-1 ring-black/10 ring-inset shadow-lg"
+                   style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute -top-12 -left-6 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+          <div class="relative snap-always snap-start w-56 -mx-8 shrink-0 sm:w-auto">
+            <p class="absolute top-0 inset-x-0 -translate-y-8 font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400">
+              object-right-bottom</p>
+            <div class="group relative mx-auto w-20 h-20 rounded-lg">
+              <div
+                  class="relative z-10 w-full h-full rounded-md bg-right-bottom ring-1 ring-black/10 ring-inset shadow-lg"
+                  style="background-image:url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=128&amp;q=80)"></div>
+              <img
+                  class="absolute -top-12 right-0 rounded-md overflow-hidden w-32 h-32 opacity-0 sm:group-hover:opacity-25 max-w-none"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=256&amp;h=256&amp;q=80">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>

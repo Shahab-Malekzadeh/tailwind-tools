@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shapes</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Shapes
+  </h1>
+
+
+  <div class="resize-x overflow-auto w-[1200px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto">
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div class="flex grid grid-cols-6 items-center justify-around sm:gap-4 font-mono font-bold p-8 shrink-0">
+
+          <div class="flex flex-col items-center shrink-0">
+            <div class="w-0 h-0 border-t-[50px] border-t-transparent
+              border-r-[100px] border-r-indigo-600 border-b-[50px] border-b-transparent">
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shrink-0">
+            <div class="w-0 h-0 border-l-[50px] border-l-transparent
+              border-b-[100px] border-b-rose-600 border-r-[50px] border-r-transparent">
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shrink-0">
+            <div class="w-0 h-0 border-t-[50px] border-t-transparent
+              border-l-[100px] border-l-lime-600 border-b-[50px] border-b-transparent">
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center shrink-0">
+            <div class="w-0 h-0 border-l-[50px] border-l-transparent
+              border-t-[100px] border-t-orange-700 border-r-[50px] border-r-transparent">
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <div class=" w-48 h-28 bg-cyan-500"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ==== -->
+</div>
+
+</body>
+</html>

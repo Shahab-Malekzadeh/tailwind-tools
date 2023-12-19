@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+		$(function () {
+			$("#main").load("/Tailwind/public/main.html");
+		});
+  </script>
+
+</head>
+<body class="bg-gray-700">
+
+<div id="main"></div>
+
+<!-- The content section -->
+<div class="container mx-auto">
+
+  <h1 class="text-5xl text-gray-300 my-5">
+    Display
+  </h1>
+  <p class="text-2xl text-gray-400">
+    Utilities for controlling the display box type of element.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display">more</a>
+  </p>
+
+
+  <div class="overflow-scroll shadow-2xl rounded-xl w-[500px] h-80 mx-auto my-10">
+    <table class="table-auto text-left text-gray-300 mx-auto">
+      <thead>
+      <tr>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Class
+        </th>
+        <th class="py-4 px-6 font-sans font-medium text-sm border-b border-gray-500">
+          Properties
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          block
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: block;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          inline-block
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: inline-block;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          inline
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: inline;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          flex
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: flex;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          inline-flex
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: inline-flex;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          inline-table
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: inline-table;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-caption
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-caption;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-cell
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-cell;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-column
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-column;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-column-group
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-column-group;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-footer-group
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-footer-group;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-header-group
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-header-group;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-row-group
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-row-group;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          table-row
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: table-row;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          flow-root
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: flow-root;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          grid
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: grid;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          inline-grid
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: inline-grid;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          contents
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: contents;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          list-item
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: list-item;</td>
+      </tr>
+      <tr>
+        <td class="py-4 px-6 border-b border-gray-500 text-sky-500">
+          hidden
+        </td>
+        <td class="py-4 px-6 border-b border-gray-500 text-indigo-400">display: none;</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="text-3xl text-gray-300 my-5">
+    Block & Inline
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use inline, inline-block, and block to control the flow of text and elements.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#block-and-inline">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="mx-auto max-w-[300px] p-4">
+      When controlling the flow of text, using the CSS property
+      <span class="inline bg-gray-500 rounded font-bold">display: inline</span>
+      will cause the text inside the element to wrap normally.
+      <br>
+      While using the property <span class="inline-block bg-gray-500 rounded font-bold">display: inline-block</span>
+      will wrap the element to prevent the text inside from extending beyond its parent.
+      <br>
+      Lastly, using the property <span class="block bg-gray-500 rounded font-bold">display: block</span>
+      will put the element on its own line and fill its parent.
+    </div>
+  </div>
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Flow Root
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use flow-root to create a block-level element with its own block formatting context.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#flow-root">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="mx-auto max-w-[300px] p-4">
+      <div class="p-4">
+        <div class="flow-root bg-indigo-500">
+          <div class="my-4 bg-gray-700">
+            Well, let me tell you something, funny boy. Y'know that little stamp, the one that says "New York Public
+            Library"? Well that may not mean anything to you, but that means a lot to me. One whole hell of a lot.
+          </div>
+        </div>
+        <div class="flow-root bg-indigo-500">
+          <div class="my-4 bg-gray-700">
+            Sure, go ahead, laugh if you want to. I've seen your type before: Flashy, making the scene, flaunting
+            convention. Yeah, I know what you're thinking. What's this guy making such a big stink about old library
+            books? Well, let me give you a hint, junior.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Flex
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use flex to create a block-level flex container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#flex">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="mx-auto max-w-xs bg-slate-800 shadow-xl p-4 text-slate-400 leading-6 flex justify-center">
+      <div class="flex items-center gap-4 p-4">
+        <img class="w-12 h-12 rounded-full"
+             src="/Tailwind/public/img/user2.png">
+        <div class="flex flex-col">
+          <strong class="text-slate-900 font-medium dark:text-slate-200">Andrew Alfred</strong>
+          <span class="text-slate-500 font-medium dark:text-slate-400">Technical advisor</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Inline Flex
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use inline-flex to create an inline flex container that flows with text.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#inline-flex">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <p class="mx-auto max-w-lg bg-slate-800 text-slate-400 shadow-xl p-4 leading-6">
+      Today I spent most of the day researching ways to take advantage of the fact that bottles can be returned for 10
+      cents in Michigan, but only 5 cents here.
+      <span class="ml-1 inline-flex items-baseline">
+      <img src="/Tailwind/public/img/user2.png" alt="" class="self-center w-5 h-5 rounded-full mr-1">
+      <span class="font-medium text-slate-900 dark:text-slate-200">Kramer</span>
+    </span> keeps telling me there is no way to make it work, that he has run the numbers on every possible approach,
+      but I just have to believe there's a way to make it work, there's simply too much opportunity here.
+    </p>
+
+  </div>
+
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Grid
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use grid to create a grid container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#grid">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div
+          class="grid grid-cols-3 grid-rows-3 gap-4 font-mono text-white text-sm font-bold leading-6 rounded-lg text-center">
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">01</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">02</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">03</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">04</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">05</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">06</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">07</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">08</div>
+        <div class="p-4 bg-fuchsia-500 shadow-lg rounded-lg">09</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Inline Grid
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use inline-grid to create an inline grid container.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#inline-grid">more</a>
+  </p>
+
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="space-x-3 overflow-x-scroll w-full p-8 whitespace-nowrap">
+      <div
+          class="inline-grid grid-cols-3 gap-4 font-mono text-white text-sm
+          font-bold leading-6 bg-sky-500/20 rounded-lg text-center">
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">01</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">02</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">03</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">04</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">05</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">06</div>
+      </div>
+      <div
+          class="inline-grid grid-cols-3 gap-4 font-mono text-white text-sm
+          font-bold leading-6 bg-sky-500/20 rounded-lg text-center">
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">01</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">02</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">03</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">04</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">05</div>
+        <div class="p-4 w-14 h-14 bg-sky-500 shadow-lg rounded-lg">06</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Contents
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use contents to create a “phantom” container whose children act like direct children of the parent.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#contents">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 font-mono text-white text-sm font-bold leading-6
+        bg-purple-500/20 rounded-lg text-center">
+        <div class="flex-1 p-4 bg-purple-500 shadow-lg rounded-lg">01</div>
+        <div class="contents">
+          <div class="flex-1 p-4 bg-purple-500 shadow-lg rounded-lg">02</div>
+          <div class="flex-1 p-4 bg-purple-500 shadow-lg rounded-lg">03</div>
+        </div>
+        <div class="flex-1 p-4 bg-purple-500 shadow-lg rounded-lg">04</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Table
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use the table, table-row, table-cell, table-caption, table-column, table-column-group, table-header-group,
+    table-row-group, and table-footer-group utilities to create elements that behave like their respective table
+    elements.
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#table">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="shadow-sm overflow-hidden my-8">
+      <div class="table border-collapse table-auto w-full text-sm">
+        <div class="table-header-group">
+          <div class="table-row">
+            <div class="table-cell border-b dark:border-slate-600 font-medium p-4
+            pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Song
+            </div>
+            <div class="table-cell border-b dark:border-slate-600 font-medium p-4
+            pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Artist
+            </div>
+            <div class="table-cell border-b dark:border-slate-600 font-medium p-4
+            pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Year
+            </div>
+          </div>
+        </div>
+        <div class="table-row-group bg-white dark:bg-slate-800">
+          <div class="table-row">
+            <div class="table-cell border-b border-slate-100 dark:border-slate-700 p-4
+            pl-8 text-slate-500 dark:text-slate-400">The Sliding Mr. Bones (Next Stop, Pottersville)
+            </div>
+            <div class="table-cell border-b border-slate-100 dark:border-slate-700 p-4
+            text-slate-500 dark:text-slate-400">Malcolm Lockyer
+            </div>
+            <div class="table-cell border-b border-slate-100 dark:border-slate-700 p-4
+            pr-8 text-slate-500 dark:text-slate-400">1961
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell border-b border-slate-100 dark:border-slate-700 p-4
+            pl-8 text-slate-500 dark:text-slate-400">Witchy Woman
+            </div>
+            <div class="table-cell border-b border-slate-100 dark:border-slate-700 p-4
+            text-slate-500 dark:text-slate-400">The Eagles
+            </div>
+            <div class="table-cell border-b border-slate-100 dark:border-slate-700 p-4
+            pr-8 text-slate-500 dark:text-slate-400">1972
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell border-b border-slate-200 dark:border-slate-600 p-4
+            pl-8 text-slate-500 dark:text-slate-400">Shining Star
+            </div>
+            <div class="table-cell border-b border-slate-200 dark:border-slate-600 p-4
+            text-slate-500 dark:text-slate-400">Earth, Wind, and Fire
+            </div>
+            <div class="table-cell border-b border-slate-200 dark:border-slate-600 p-4
+            pr-8 text-slate-500 dark:text-slate-400">1975
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="text-5xl text-gray-300 my-5">
+    Hidden
+  </h2>
+  <p class="text-2xl text-gray-400">
+    Use hidden to set an element to display: none and remove it from the page layout (compare with .invisible from the
+    visibility documentation).
+
+    <a class="text-cyan-500 underline" target="_blank"
+       href="https://tailwindcss.com/docs/display#hidden">more</a>
+  </p>
+
+  <div class="resize-x overflow-auto w-[1000px] min-w-[300px] max-w-full
+    border border-gray-500 shadow-xl rounded-lg mx-auto my-10 p-4">
+
+    <div class="relative rounded-xl overflow-auto p-8">
+      <div class="flex gap-4 font-mono text-white text-sm font-bold leading-6
+        bg-purple-500/20 rounded-lg text-center">
+        <div class="hidden p-4 w-14 h-14 bg-purple-500 shadow-lg rounded-lg" wfd-invisible="true">01</div>
+        <div class="p-4 w-14 h-14 bg-purple-500 shadow-lg rounded-lg">02</div>
+        <div class="p-4 w-14 h-14 bg-purple-500 shadow-lg rounded-lg">03</div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+</body>
+</html>
